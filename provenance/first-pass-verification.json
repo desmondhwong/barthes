@@ -1,0 +1,153 @@
+{
+  "checked_at": "2026-11-01T19:03:41.795Z",
+  "scope": "Local production build, live development Supabase/public Are.na, Chromium browser; not a deployment receipt",
+  "automated": {
+    "content_database_routing": 30,
+    "reader": 85,
+    "failed": 0,
+    "typecheck": "passed",
+    "production_build": "passed"
+  },
+  "http": {
+    "passed": true,
+    "baseURL": "http://127.0.0.1:3011",
+    "concurrency": 4,
+    "checks": {
+      "hlcDirect": 34,
+      "hlcAliases": 141,
+      "arenaDirect": 2,
+      "health": 1
+    },
+    "expected": {
+      "hlcDirect": 34,
+      "hlcAliases": 141,
+      "arenaDirect": 2,
+      "health": 1
+    },
+    "elapsedMs": 12978,
+    "failures": []
+  },
+  "browser": {
+    "ok": true,
+    "initialReaderMs": 338,
+    "elapsedMs": 5814,
+    "checks": [
+      {
+        "name": "fresh HLC reader: 34 pages, one current reading surface",
+        "status": "passed",
+        "ms": 779
+      },
+      {
+        "name": "authored link adds one history entry; Back/Forward preserves branch",
+        "status": "passed",
+        "ms": 68
+      },
+      {
+        "name": "breadcrumb return preserves future; new hyperlink replaces that branch",
+        "status": "passed",
+        "ms": 972
+      },
+      {
+        "name": "G toggles graph/read without adding history or changing URL",
+        "status": "passed",
+        "ms": 345
+      },
+      {
+        "name": "Index jump visits a page without inventing a traveled edge",
+        "status": "passed",
+        "ms": 97
+      },
+      {
+        "name": "theme, reduced frame, saved view and Zen recovery",
+        "status": "passed",
+        "ms": 290
+      },
+      {
+        "name": "graph filters preserve recoverable empty state and local-neighbor view",
+        "status": "passed",
+        "ms": 273
+      },
+      {
+        "name": "title/date/path/shuffle arrangements and keyboard density control",
+        "status": "passed",
+        "ms": 168
+      },
+      {
+        "name": "held zoom stops after pointer release",
+        "status": "passed",
+        "ms": 1973
+      },
+      {
+        "name": "reduced motion supports immediate graph/read recovery",
+        "status": "passed",
+        "ms": 70
+      },
+      {
+        "name": "mobile Arrange panel and hidden-bar reveal remain usable",
+        "status": "passed",
+        "ms": 779
+      }
+    ],
+    "messages": []
+  },
+  "all_routes_without_javascript": {
+    "noJavaScriptRoutes": 34,
+    "failures": []
+  },
+  "portability": {
+    "freshVersion5Import": "Exploration imported.",
+    "invalidImport": {
+      "status": "Import failed: Invalid snapshot: expected valid JSON. Current exploration kept.",
+      "statePreserved": true
+    },
+    "corpusMismatch": {
+      "status": "Import failed: Invalid snapshot: this exploration belongs to another corpus. Current exploration kept.",
+      "statePreserved": true
+    },
+    "issues": []
+  },
+  "graph_interaction": {
+    "connection": {
+      "hovered": "Test block B",
+      "edgeTarget": "52203995",
+      "edges": [
+        {
+          "from": "52203993",
+          "to": "52203995",
+          "traversed": true
+        }
+      ]
+    },
+    "dragMovementPixels": 111.04153270224292,
+    "semanticLevels": [
+      "reading",
+      "page",
+      "lines",
+      "outline",
+      "abstract"
+    ],
+    "zoomRestored": "reading",
+    "errors": []
+  },
+  "additional_observations": {
+    "legacy_import": "Sitemap v4 export from old hosted HLC imported, exported as v5, then imported into fresh new-reader context.",
+    "storage_denied": "Both storage getters throw SecurityError; reader remains usable, warning offers export, zero page errors.",
+    "mobile": "390\u00d7844 emulated touch: Arrange, Settings, Zen/menu recovery pass. 812\u00d7375 controls reachable, no horizontal overflow.",
+    "enlarged_text": "200% root font: Settings close remains visible, no horizontal overflow.",
+    "graph_overlap": "34 visible settled HLC graph card bounds: zero overlapping pairs.",
+    "focus": "Departing focused reading body warning fixed; subsequent navigation/browser journey no warnings.",
+    "emulated_pinch": "Chromium touch emulation: two-finger pinch shrank current page from366px to150.25px (lines representation); release completed.",
+    "held_input_cancel": "Window blur during held zoom stopped further size changes.",
+    "cache_refresh": {
+      "revalidate_seconds": 300,
+      "cache_entry_initial_mtime": 1793559705.6618712,
+      "cache_entry_refreshed_mtime": 1793560014.77766,
+      "observed": "A production-server request after expiry returned HTTP200; the same Are.na FETCH entry refreshed in the background."
+    }
+  },
+  "limitations": [
+    "Chromium desktop and emulated mobile/touch; no physical-device or cross-browser acceptance.",
+    "Startup timing is one warm local measurement for 34 pages, not a scalability benchmark."
+  ],
+  "database_evidence": "../supabase/verification.json"
+}

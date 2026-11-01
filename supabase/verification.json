@@ -1,0 +1,78 @@
+{
+  "project_ref": "zqiwvslkjggofcosbvpj",
+  "checked_at": "2026-11-01T18:51:36Z",
+  "migrations": [
+    {
+      "version": "20261101184827",
+      "name": "public_reader_schema",
+      "file": "migrations/20261101184827_public_reader_schema.sql",
+      "sha256": "269086e1af9d442488e8a86c039bb0bc1fbaf440c89c5930dec287fa10585544"
+    },
+    {
+      "version": "20261101184833",
+      "name": "reader_seed",
+      "file": "migrations/20261101184833_reader_seed.sql",
+      "sha256": "b3c625c29930322af2776f94c1da02ded03bf000d98d6db486111b682d13f0bd"
+    }
+  ],
+  "row_counts": {
+    "owners": 1,
+    "sites": 2,
+    "site_sources": 2,
+    "pages": 36,
+    "page_aliases": 141
+  },
+  "policy_test": {
+    "file": "tests/public_reader_access.sql",
+    "result": "passed",
+    "roles": [
+      "anon",
+      "authenticated"
+    ],
+    "private_site_source_page_aliases": "filtered",
+    "owners_select": "denied",
+    "all_table_insert_update_delete": "denied with insufficient_privilege",
+    "fixtures": "transaction rolled back"
+  },
+  "security_advisory": {
+    "level": "INFO",
+    "name": "rls_enabled_no_policy",
+    "table": "public.owners",
+    "interpretation": "Intentional: operator-only table has no client grants or permissive policy.",
+    "url": "https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy"
+  },
+  "runtime_data_api": {
+    "checked_at": "2026-11-01T18:51:36Z",
+    "environment": "local Node process using ignored .env.local",
+    "public_reads": {
+      "checkDatabaseConnection": "passed",
+      "hlc_pages": 34,
+      "hlc_aliases": 141,
+      "arena_pages": 2
+    },
+    "denied_requests": [
+      {
+        "operation": "owners SELECT",
+        "http_status": 401,
+        "postgres_code": "42501"
+      },
+      {
+        "operation": "sites UPDATE",
+        "http_status": 401,
+        "postgres_code": "42501"
+      },
+      {
+        "operation": "page_aliases DELETE",
+        "http_status": 401,
+        "postgres_code": "42501"
+      },
+      {
+        "operation": "pages INSERT",
+        "http_status": 401,
+        "postgres_code": "42501"
+      }
+    ],
+    "secrets_printed": false,
+    "vercel_runtime": "Not exercised by this check."
+  }
+}

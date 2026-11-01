@@ -1,0 +1,221 @@
+{
+  "_generated": "hx generated 261101 — approved Barthes first-pass public-corpus import",
+  "schema": "barthes-content-provenance-1",
+  "maintainedSource": "content/hlc",
+  "preservedPrototype": "work/sitemap/hlc-1",
+  "boundary": "Only the 34 already-published HLC adaptation Markdown files. Underlying vault notes are not imported.",
+  "transformation": "Markdown copied byte-for-byte. Compiler adapted to TypeScript and /s/hlc routes; content and stable source IDs preserved. tests/content/fixtures/hlc-baseline.json retains original compiled output for parity checks.",
+  "compiler": {
+    "source": "work/sitemap/src/tools/compile.mjs",
+    "sha256": "b8fdf36b9c70adbd1a4937713ef74ad6f730467e14fb27129c37a8526264d516",
+    "destination": "src/lib/content/hlc.ts"
+  },
+  "pages": 34,
+  "directedEdges": 132,
+  "files": [
+    {
+      "source": "work/sitemap/hlc-1/critique/ideology-and-power.md",
+      "destination": "content/hlc/critique/ideology-and-power.md",
+      "bytes": 1946,
+      "sha256": "476c25c91414432051fed4c5c518c71c1fe9413f1ce0df5b7593b9cb5e0e076f"
+    },
+    {
+      "source": "work/sitemap/hlc-1/critique/novelty-and-evidence.md",
+      "destination": "content/hlc/critique/novelty-and-evidence.md",
+      "bytes": 3007,
+      "sha256": "eb7a453d8c5f629d2f8c6c55ac63362ce9b3ec110f782ea49b5a855defe85047"
+    },
+    {
+      "source": "work/sitemap/hlc-1/critique/persona.md",
+      "destination": "content/hlc/critique/persona.md",
+      "bytes": 1903,
+      "sha256": "797589b84d456c16fbb72167642fae6d6c85a0dd05090f339b9b9f88743921af"
+    },
+    {
+      "source": "work/sitemap/hlc-1/critique/recursive-loops.md",
+      "destination": "content/hlc/critique/recursive-loops.md",
+      "bytes": 2848,
+      "sha256": "30993f258e26901dc28365e2fe43e4717cccf59dc3f767b763be7996c5bf6c80"
+    },
+    {
+      "source": "work/sitemap/hlc-1/critique/technosolutionism.md",
+      "destination": "content/hlc/critique/technosolutionism.md",
+      "bytes": 1891,
+      "sha256": "7a084312510415eff963c4640fabb7862aed65c4377d9f7990e18bdcd57a8976"
+    },
+    {
+      "source": "work/sitemap/hlc-1/extensions/multimodal.md",
+      "destination": "content/hlc/extensions/multimodal.md",
+      "bytes": 3003,
+      "sha256": "825554a955d0ad9cb334a30eef2592a818936ffedd0aafce291622e093479d31"
+    },
+    {
+      "source": "work/sitemap/hlc-1/extensions/multiple-models.md",
+      "destination": "content/hlc/extensions/multiple-models.md",
+      "bytes": 1545,
+      "sha256": "d1e1de71c04b6d89a11303e8ad48f8218eec86f5af3b60709fa42ae8f30c06b2"
+    },
+    {
+      "source": "work/sitemap/hlc-1/formats/mandala.md",
+      "destination": "content/hlc/formats/mandala.md",
+      "bytes": 1821,
+      "sha256": "fae3f490b872dcac0e378302c6e43363e09ba199972619bc6bfd518b99e43d1c"
+    },
+    {
+      "source": "work/sitemap/hlc-1/formats/prose-and-maps.md",
+      "destination": "content/hlc/formats/prose-and-maps.md",
+      "bytes": 1811,
+      "sha256": "25bc10ce3d9c1554b1d2818043702cf2367eafd3f8ba2003262b856bfd3b9baa"
+    },
+    {
+      "source": "work/sitemap/hlc-1/foundations/activation-field.md",
+      "destination": "content/hlc/foundations/activation-field.md",
+      "bytes": 1896,
+      "sha256": "b1914616aa6e2dd9b54768345f8aec8e4c8412bb6a8ee3653d57d22b66d8d4cc"
+    },
+    {
+      "source": "work/sitemap/hlc-1/foundations/corpus-membrane.md",
+      "destination": "content/hlc/foundations/corpus-membrane.md",
+      "bytes": 1932,
+      "sha256": "4062544f4e4408c9f620fd9a8df53e7aae4172e81f4973def7e7771b83a9d0b0"
+    },
+    {
+      "source": "work/sitemap/hlc-1/foundations/cultural-hologram.md",
+      "destination": "content/hlc/foundations/cultural-hologram.md",
+      "bytes": 1857,
+      "sha256": "972d30c15878efb8144ac1116db744a0299d55d3a54be02c61443033ccd0aa0b"
+    },
+    {
+      "source": "work/sitemap/hlc-1/foundations/digital-trace.md",
+      "destination": "content/hlc/foundations/digital-trace.md",
+      "bytes": 2959,
+      "sha256": "5b46c1a1d93a76876d3c545c5ae4d4d23748539c76c0537b527399e216bdce56"
+    },
+    {
+      "source": "work/sitemap/hlc-1/foundations/language-and-reality.md",
+      "destination": "content/hlc/foundations/language-and-reality.md",
+      "bytes": 2023,
+      "sha256": "966396c47b42e31dfc03efe00c78b7d3c9ddaad9a2de191f0bf1e9e2dbc526f7"
+    },
+    {
+      "source": "work/sitemap/hlc-1/foundations/latent-manifold.md",
+      "destination": "content/hlc/foundations/latent-manifold.md",
+      "bytes": 2858,
+      "sha256": "2104293edf5154f10afdf46c3bc8e6762856d32d8a34761cedf0e25c07972999"
+    },
+    {
+      "source": "work/sitemap/hlc-1/home.md",
+      "destination": "content/hlc/home.md",
+      "bytes": 2603,
+      "sha256": "e8625038ad947228277e0b1b25e894ffb349fc65d43673e65c7247c75f552f6e"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/epistemic-posture.md",
+      "destination": "content/hlc/practice/epistemic-posture.md",
+      "bytes": 1870,
+      "sha256": "a95a3387714fb303e6878b9f9859610654927da58fb1880f95900563a89cd94c"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/exercises/attractor-survey.md",
+      "destination": "content/hlc/practice/exercises/attractor-survey.md",
+      "bytes": 1894,
+      "sha256": "5dea00de9c052c134f0781db9c864849346a8f3acf993d30ccc4d6fea75813aa"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/exercises/boundary-search.md",
+      "destination": "content/hlc/practice/exercises/boundary-search.md",
+      "bytes": 1990,
+      "sha256": "ff1a1887b7921433b20b9ce9862a3f8d8adad10131c8bdba3266d8fc5a1ee4e2"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/exercises/integration.md",
+      "destination": "content/hlc/practice/exercises/integration.md",
+      "bytes": 1841,
+      "sha256": "2c09ffb7f96c9a6cff3fd865a15591e73a55df29f5546a456675164eb2ed4013"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/lenses.md",
+      "destination": "content/hlc/practice/lenses.md",
+      "bytes": 1903,
+      "sha256": "866f3f07bb61d359f6f74d40f646a68ff382394653df97c9952f0692590fee53"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/operators/composition.md",
+      "destination": "content/hlc/practice/operators/composition.md",
+      "bytes": 1612,
+      "sha256": "78387ee394149d057afa07f36d3a8b639a25a11a3f9a86bb2501d32c4c064638"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/operators/hyperrelation.md",
+      "destination": "content/hlc/practice/operators/hyperrelation.md",
+      "bytes": 1882,
+      "sha256": "691c82cbd2247c61c7c02737e64cfcc1c8ad39a2cca1047bf2cb88e1aeba2e8f"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/operators/recursion.md",
+      "destination": "content/hlc/practice/operators/recursion.md",
+      "bytes": 1905,
+      "sha256": "00c14bf4b1c7e6aa21eee0cc064aa6829eca2d5535fc178a7473ddb8152de726"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/operators/topological-thinking.md",
+      "destination": "content/hlc/practice/operators/topological-thinking.md",
+      "bytes": 1946,
+      "sha256": "7ae22aab179e8c25fd4b1395e348f31d4d2af98018105259a45025d0b9d9f8fe"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/parallax.md",
+      "destination": "content/hlc/practice/parallax.md",
+      "bytes": 1845,
+      "sha256": "ac4ad2577eb77eb1e8ef5c0369e904033d92b191d9c61efb6e0570381c1c1e82"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/reindexing.md",
+      "destination": "content/hlc/practice/reindexing.md",
+      "bytes": 1489,
+      "sha256": "2bd86d7987e116fcc057a74ed5bf2e0f75710439e8f7785bff8dfc07d6326aa8"
+    },
+    {
+      "source": "work/sitemap/hlc-1/practice/telescope-protocol.md",
+      "destination": "content/hlc/practice/telescope-protocol.md",
+      "bytes": 3210,
+      "sha256": "f2e546876bba65f6ce526daed118169928c6e84e58e045cdd39f96fabf453ddb"
+    },
+    {
+      "source": "work/sitemap/hlc-1/sources.md",
+      "destination": "content/hlc/sources.md",
+      "bytes": 4515,
+      "sha256": "4ca79a98c0b07e46786b48e8d27912ced3e4de57b447ae716824c78c58676213"
+    },
+    {
+      "source": "work/sitemap/hlc-1/start/reading-paths.md",
+      "destination": "content/hlc/start/reading-paths.md",
+      "bytes": 2175,
+      "sha256": "21a496535f0676c429566676de3d281653401b140c2aabe95ec02b7272e889c2"
+    },
+    {
+      "source": "work/sitemap/hlc-1/start/what-is-hlc.md",
+      "destination": "content/hlc/start/what-is-hlc.md",
+      "bytes": 2087,
+      "sha256": "9fddf4c89004d3e4c25fcfe6f5dd7ca1dbbeb838b6bac3842c75c91f1b879e81"
+    },
+    {
+      "source": "work/sitemap/hlc-1/terrain/attractors.md",
+      "destination": "content/hlc/terrain/attractors.md",
+      "bytes": 1885,
+      "sha256": "0a840c8b1d9ea8b1313834f09f44dff85b325b87db62b6a9fb9942e1ded3ac8e"
+    },
+    {
+      "source": "work/sitemap/hlc-1/terrain/conceptual-exoplanets.md",
+      "destination": "content/hlc/terrain/conceptual-exoplanets.md",
+      "bytes": 1871,
+      "sha256": "1495bd786153b0d83a2ff37ccef7660cc457e8163a9db6b4841042280e55cc96"
+    },
+    {
+      "source": "work/sitemap/hlc-1/terrain/voids.md",
+      "destination": "content/hlc/terrain/voids.md",
+      "bytes": 1879,
+      "sha256": "079d99f2a78f69256fe8bd6b985fa3dfc4fc1b7a837284d5959ce79cd86e9e43"
+    }
+  ]
+}

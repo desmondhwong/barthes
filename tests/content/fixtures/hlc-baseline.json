@@ -1,0 +1,546 @@
+{
+  "version": 3,
+  "title": "HLC field notes",
+  "pages": [
+    {
+      "id": "home",
+      "title": "A field guide to HLC",
+      "href": "./",
+      "section": "start",
+      "publishedDate": "2026-09-16",
+      "wordCount": 332,
+      "html": "<h1 id=\"a-field-guide-to-hlc\">A field guide to HLC</h1>\n<p>Holographic Linguistic Cosmography, or HLC, is a way of thinking about language models through the cultural material from which they are made and the practices through which people use them. Its recurring image is the telescope: an instrument makes some patterns visible while its construction limits what can be seen. This small interconnected guide introduces that framework, its working vocabulary, and its internal criticisms.</p>\n<p>The starting distinction is between the <a data-page-link href=\"foundations--cultural-hologram\">cultural hologram</a>, the <a data-page-link href=\"foundations--digital-trace\">digital trace</a>, and the <a data-page-link href=\"foundations--latent-manifold\">latent manifold</a>. Culture exceeds its records; records exceed any particular training corpus; a model is shaped by that selected material without becoming a complete archive of it. Keeping those differences visible is more useful than taking the astronomical imagery literally.</p>\n<h2 id=\"enter-from-a-question\">Enter from a question</h2>\n<ul><li>What does the name mean? Begin with <a data-page-link href=\"start--what-is-hlc\">What is HLC?</a>.</li><li>How might I use it? Try the <a data-page-link href=\"practice--telescope-protocol\">telescope protocol</a>.</li><li>What could go wrong? Read <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a> and <a data-page-link href=\"critique--recursive-loops\">When reflection becomes a loop</a>.</li><li>Where does the metaphor stop? Visit <a data-page-link href=\"foundations--language-and-reality\">Language and reality</a> or <a data-page-link href=\"extensions--multimodal\">Beyond text</a>.</li></ul>\n<p>The pages form several <a data-page-link href=\"start--reading-paths\">reading paths</a>, but there is no single required sequence. The links deliberately connect methods with their limits: a page about generating an unfamiliar concept leads to questions about evidence, and a page about changing lenses leads to the problem of shared assumptions. A useful map should expose those crossings.</p>\n<p>This guide is an original explanatory adaptation of the local HLC notes, primarily from November 2025. It is neither a replacement edition of those notes nor a claim that their proposals constitute an established scientific theory. Some source passages speak more confidently about model geometry and cognition than their evidence supports; this edition preserves the ideas while identifying interpretation and speculation. The <a data-page-link href=\"sources\">Sources and editorial approach</a> page records the source paths and the adaptation boundary.</p>\n<p>Read a page, follow a connection, and return with a different question. The goal is a usable vocabulary for inquiry, with enough friction to keep a compelling explanation from becoming its own proof.</p>",
+      "links": [
+        "foundations/cultural-hologram",
+        "foundations/digital-trace",
+        "foundations/latent-manifold",
+        "start/what-is-hlc",
+        "practice/telescope-protocol",
+        "critique/novelty-and-evidence",
+        "critique/recursive-loops",
+        "foundations/language-and-reality",
+        "extensions/multimodal",
+        "start/reading-paths",
+        "sources"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"foundations--cultural-hologram\">The cultural hologram</a> <a data-page-link href=\"foundations--digital-trace\">The digital trace</a> <a data-page-link href=\"foundations--latent-manifold\">The latent manifold</a> <a data-page-link href=\"start--what-is-hlc\">What is HLC?</a> <a data-page-link href=\"practice--telescope-protocol\">A small telescope protocol</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a> <a data-page-link href=\"critique--recursive-loops\">When reflection becomes a loop</a> <a data-page-link href=\"foundations--language-and-reality\">Language and reality</a> <a data-page-link href=\"extensions--multimodal\">Beyond text</a> <a data-page-link href=\"start--reading-paths\">Three ways through the field guide</a> <a data-page-link href=\"sources\">Sources and editorial approach</a></nav>"
+    },
+    {
+      "id": "critique/ideology-and-power",
+      "title": "Ideology and the shape of what is easy to say",
+      "href": "critique--ideology-and-power",
+      "section": "critique",
+      "publishedDate": "2026-09-16",
+      "wordCount": 260,
+      "html": "<h1 id=\"ideology-and-the-shape-of-what-is-easy-to-say\">Ideology and the shape of what is easy to say</h1>\n<p>The HLC corpus treats ideology as more than a list of explicit political opinions. It asks how assumptions become ordinary: which goals seem natural, which institutions appear inevitable, and which descriptions require no explanation. In this reading, the familiar language produced by a model can be examined for the social arrangements it takes for granted.</p>\n<p>The source’s discussion of capitalist realism develops one example. A question about a public service may be answered through growth, competition, efficiency, or consumer choice before other purposes are considered. This is a critical lens on a pattern, not proof that every model or every response has a uniform political position.</p>\n<p>The pattern cannot be separated from the <a data-page-link href=\"foundations--digital-trace\">digital trace</a>. Who has resources to publish? Which languages are well represented? Whose experience becomes a dataset, and who controls its interpretation? The <a data-page-link href=\"foundations--corpus-membrane\">corpus membrane</a> adds the decisions that select and transform records for a particular system.</p>\n<p>Prompting can make some assumptions easier to inspect. Ask whose work an apparently effortless service depends on, which costs are displaced, and what alternatives the framing excludes. Then compare the answer with material sources and affected people’s accounts. A model can help organize those questions while still reproducing the assumptions under examination.</p>\n<p>This is where <a data-page-link href=\"critique--technosolutionism\">the critique of technosolutionism</a> becomes necessary. A more sophisticated explanation of power does not itself redistribute resources or decision-making. HLC’s map can support inquiry and action, but the map’s political value depends on what happens beyond the conversation and on who gets to contest it.</p>",
+      "links": [
+        "foundations/digital-trace",
+        "foundations/corpus-membrane",
+        "critique/technosolutionism"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"foundations--digital-trace\">The digital trace</a> <a data-page-link href=\"foundations--corpus-membrane\">The corpus membrane</a> <a data-page-link href=\"critique--technosolutionism\">Can a telescope become a solution?</a></nav>"
+    },
+    {
+      "id": "critique/novelty-and-evidence",
+      "title": "Novelty needs evidence",
+      "href": "critique--novelty-and-evidence",
+      "section": "critique",
+      "publishedDate": "2026-09-16",
+      "wordCount": 417,
+      "html": "<h1 id=\"novelty-needs-evidence\">Novelty needs evidence</h1>\n<p>HLC encourages the generation of unfamiliar concepts, but several different achievements can be mistaken for one another. An idea can be new to a reader, unusual in a particular conversation, useful in a local project, or original relative to a body of prior work. These are distinct claims with different evidentiary demands.</p>\n<p>A model’s assertion that a concept is rare does not establish its frequency in training data. A statement that an idea has never been articulated is even harder to support. The <a data-page-link href=\"practice--telescope-protocol\">telescope protocol</a> can produce candidates for investigation; it does not provide a census of human thought or direct access to internal model density.</p>\n<h2 id=\"separate-the-questions\">Separate the questions</h2>\n<ul><li><strong>Coherence:</strong> Can the concept be defined without changing its meaning between examples?</li><li><strong>Usefulness:</strong> Does it clarify a question or improve a specific action?</li><li><strong>Originality:</strong> How does it relate to prior terms, practices, and arguments?</li><li><strong>Truth:</strong> What evidence supports its claims about the world?</li></ul>\n<p>A concept may be useful without being original, and an original speculation may be false. Keeping these dimensions separate prevents the excitement of a new phrase from answering every question at once.</p>\n<p><a data-page-link href=\"practice--parallax\">Parallax</a> and <a data-page-link href=\"extensions--multiple-models\">cross-model comparison</a> can expose differences worth checking. They cannot replace independent sources when the models share assumptions or repeat the same error. A model-generated criticism is also still an output to evaluate, not an automatic certification that the original answer survived scrutiny.</p>\n<p>The most durable result is often a narrower claim. Instead of “we discovered a new region of thought,” write “this distinction helped explain these two cases, and these questions remain.” <a data-page-link href=\"practice--exercises--integration\">Integration</a> gives that claim an inspectable form. The result loses little by being proportionate to its evidence and gains a clearer path for further work.</p>\n<h2 id=\"a-worked-distinction\">A worked distinction</h2>\n<p>Suppose a session proposes “access as maintenance.” The first test asks whether the phrase consistently means the recurring work that keeps a service usable. A second asks whether it changes what is inspected: perhaps broken signs and obsolete instructions become part of an access review. A third asks which existing fields already discuss the same issue. A fourth asks whether the proposed maintenance actually improves access in the setting at hand.</p>\n<p>These tests can yield different answers. The phrase might help a team while adding nothing original to existing scholarship. It might be original in wording yet hide an old idea. It might suggest a worthwhile intervention whose effectiveness remains unknown. Recording those differences produces a better result than assigning the concept one undifferentiated score for being insightful.</p>",
+      "links": [
+        "practice/telescope-protocol",
+        "practice/parallax",
+        "extensions/multiple-models",
+        "practice/exercises/integration"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--telescope-protocol\">A small telescope protocol</a> <a data-page-link href=\"practice--parallax\">Parallax through comparison</a> <a data-page-link href=\"extensions--multiple-models\">Comparing different instruments</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a></nav>"
+    },
+    {
+      "id": "critique/persona",
+      "title": "Persona and the feeling of an interlocutor",
+      "href": "critique--persona",
+      "section": "critique",
+      "publishedDate": "2026-09-16",
+      "wordCount": 254,
+      "html": "<h1 id=\"persona-and-the-feeling-of-an-interlocutor\">Persona and the feeling of an interlocutor</h1>\n<p>A language model’s conversational form encourages the feeling of an interlocutor. It can use a stable tone, respond to the details of a question, and produce language that resembles recognition or agreement. HLC’s critique of <strong>persona illusion</strong> concerns the way this presentation can become a shortcut for trust.</p>\n<p>The practical issue is not whether conversational language is always inappropriate. A friendly explanation may be easier to read than an impersonal one. The issue is whether the style quietly carries a claim of personal authority: the answer feels as if it comes from someone who understands the situation in the same way a human participant might.</p>\n<p>The source notes connect this effect to ideological recognition. A response can affirm the user’s preferred identity while making its assumptions less visible. An answer that repeatedly presents someone as an unusually perceptive explorer may strengthen attachment to the framework instead of testing the framework’s claims.</p>\n<p>An alternative <a data-page-link href=\"practice--epistemic-posture\">posture</a> asks for explicit reasons, counterexamples, and uncertainty. It also preserves the possibility that the question is poorly framed. These practices do not remove every influence of tone or familiarity, but they create points at which the content can be examined independently of the relationship it simulates.</p>\n<p>This critique applies to HLC’s own rhetoric. Grand descriptions of the cosmographic practitioner can become another persona to inhabit. Read the <a data-page-link href=\"practice--telescope-protocol\">telescope protocol</a> as a set of working moves, not an initiation into a superior kind of user. Its results remain subject to <a data-page-link href=\"critique--novelty-and-evidence\">evidence</a> and ordinary disagreement.</p>",
+      "links": [
+        "practice/epistemic-posture",
+        "practice/telescope-protocol",
+        "critique/novelty-and-evidence"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--epistemic-posture\">Epistemic posture</a> <a data-page-link href=\"practice--telescope-protocol\">A small telescope protocol</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a></nav>"
+    },
+    {
+      "id": "critique/recursive-loops",
+      "title": "When reflection becomes a loop",
+      "href": "critique--recursive-loops",
+      "section": "critique",
+      "publishedDate": "2026-09-16",
+      "wordCount": 392,
+      "html": "<h1 id=\"when-reflection-becomes-a-loop\">When reflection becomes a loop</h1>\n<p>Reflection can improve a question, but repeated reflection can also make a framework increasingly self-confirming. HLC’s source notes recognize this risk in recursive work: the same vocabulary is reused to interpret every result, and each new interpretation is then treated as support for the vocabulary. The loop produces internal coherence without necessarily improving contact with the subject.</p>\n<p>Watch for a few observable signs. Successive passes add levels but no new examples. A failed prediction becomes proof of a deeper hidden layer. Every objection is absorbed as another instance of the theory. The account grows harder to contradict while becoming less clear about what it explains.</p>\n<p>The source’s discussions of recursion and symbolic overinterpretation are most useful when read as methodological cautions. They do not establish a universal explanation of contemplative experiences, mental states, or intelligence. A strong feeling of insight is a real event for the person experiencing it, but it is not sufficient evidence for the interpretation attached to it.</p>\n<p>To interrupt the loop, return to a concrete case, ask what a simpler explanation would predict, or change the <a data-page-link href=\"practice--lenses\">lens</a>. <a data-page-link href=\"practice--reindexing\">Reindexing</a> can help when the existing categories have become too accommodating. Sometimes the right move is simply to stop elaborating and record the unresolved question.</p>\n<p>The <a data-page-link href=\"practice--operators--recursion\">recursive operator</a> remains useful when its passes make identifiable improvements. <a data-page-link href=\"practice--exercises--integration\">Integration</a> supplies a closing move: define the result, name its limit, and decide what outside input would change it. A practice that can stop has a better chance of learning from something beyond its own continuation.</p>\n<h2 id=\"a-concrete-stopping-test\">A concrete stopping test</h2>\n<p>Consider an explanation that every disappointing response is caused by an ideological attractor. You ask for another lens, receive another disappointing response, and explain the second failure as evidence of an even deeper attractor. The account has become difficult to disconfirm because any outcome can be absorbed into it.</p>\n<p>A stopping test asks what else could produce the same result: an ambiguous question, insufficient source material, a mistaken premise, or an ordinary generation error. Choose a case that distinguishes at least two explanations. If no conceivable observation changes the preferred account, describe it as an interpretive stance rather than a tested causal explanation.</p>\n<p>This does not prohibit speculative thought. It clarifies the kind of work being done and prevents the energy of repeated elaboration from being mistaken for accumulated evidence.</p>",
+      "links": [
+        "practice/lenses",
+        "practice/reindexing",
+        "practice/operators/recursion",
+        "practice/exercises/integration"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--lenses\">Choosing a lens</a> <a data-page-link href=\"practice--reindexing\">Reindexing a question</a> <a data-page-link href=\"practice--operators--recursion\">Recursion as a working operator</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a></nav>"
+    },
+    {
+      "id": "critique/technosolutionism",
+      "title": "Can a telescope become a solution?",
+      "href": "critique--technosolutionism",
+      "section": "critique",
+      "publishedDate": "2026-09-16",
+      "wordCount": 250,
+      "html": "<h1 id=\"can-a-telescope-become-a-solution\">Can a telescope become a solution?</h1>\n<p>HLC asks a model to help inspect patterns produced partly by models and their cultural sources. That makes the practice reflexive, but it also creates a temptation: the instrument that helps explain a problem starts to appear as the solution to the problem. The source notes explicitly raise this concern under <strong>technosolutionism</strong>.</p>\n<p>The distinction is between understanding and changing a situation. A conversation can clarify an institutional conflict, identify a misleading assumption, or produce language for a proposal. Those outcomes may matter. They do not automatically change funding, working conditions, governance, or the distribution of power.</p>\n<p>The telescope analogy is useful here. Better observation can support better action, but observation has its own conditions and limits. A beautifully detailed map can coexist with inaction. It can also give a person the feeling of having escaped an ideology while leaving the surrounding arrangements untouched.</p>\n<p>A practical integration question is: who could use this result, for what decision, and with what opportunity to disagree? If the answer is only “the conversation can continue,” the result may still be exploratory. Calling it exploratory preserves its value without overstating its consequences.</p>\n<p>This page connects <a data-page-link href=\"critique--ideology-and-power\">ideology and power</a> with <a data-page-link href=\"practice--exercises--integration\">integration</a>. It also returns to <a data-page-link href=\"foundations--activation-field\">the activation field</a>, where the purpose of the session is set. HLC can be a method of inquiry and conceptual development. Its strongest internal critique asks it to remain accountable to that role instead of treating increased interpretive sophistication as a universal form of progress.</p>",
+      "links": [
+        "critique/ideology-and-power",
+        "practice/exercises/integration",
+        "foundations/activation-field"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"critique--ideology-and-power\">Ideology and the shape of what is easy to say</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a> <a data-page-link href=\"foundations--activation-field\">The activation field</a></nav>"
+    },
+    {
+      "id": "extensions/multimodal",
+      "title": "Beyond text",
+      "href": "extensions--multimodal",
+      "section": "extensions",
+      "publishedDate": "2026-09-16",
+      "wordCount": 403,
+      "html": "<h1 id=\"beyond-text\">Beyond text</h1>\n<p>The later HLC notes ask how the framework changes when the medium is an image, a sound, a video, or another kind of representation. They propose names such as Holographic Iconographic Cosmography and Holographic Multimodal Cosmography. These names extend the project’s conceptual vocabulary; they are not established technical categories that every generative system shares.</p>\n<p>The common question is what a representation makes available. A written description of a room, a photograph, and an audio recording preserve different aspects of the same setting. A model working with one or several of these inputs can be asked to compare patterns, but each input remains selective. The <a data-page-link href=\"foundations--digital-trace\">digital trace</a> expands without becoming the event itself.</p>\n<p>This is especially important for the source’s speculative discussions of touch, scent, dreams, and experience. A sensor measurement or a personal report is a representation with specific limits. Encoding a correlate of experience does not establish that an experience has been completely captured, reproduced, or understood. The source’s future timelines are proposals from its writing context, not verified forecasts in this guide.</p>\n<p>The practical method can still travel: identify recurring forms, vary a <a data-page-link href=\"practice--lenses\">lens</a>, compare outputs, and explain what the comparison supports. For a visual inquiry, that might mean examining which composition choices repeatedly appear and which alternatives change the interpretation.</p>\n<p>Different media also invite different evaluation methods. A useful <a data-page-link href=\"formats--prose-and-maps\">translation between forms</a> should preserve an explicit question while acknowledging what changes in translation. The governing boundary remains the one in <a data-page-link href=\"foundations--language-and-reality\">Language and reality</a>: a richer representation is still a representation, and its claims require an appropriate basis.</p>\n<h2 id=\"keep-the-translations-visible\">Keep the translations visible</h2>\n<p>Imagine a written description of a crowded room used to generate an image, followed by a written analysis of that image. The final prose may contain details introduced during image generation rather than details from the original account. Those additions can be creatively useful, but they should not return to the original situation disguised as observations.</p>\n<p>A simple record can preserve the initial description, the generated image, and the later interpretation as three distinct artifacts. Ask which details were supplied, which were inferred, and which were invented. This makes the cross-modal loop available for criticism.</p>\n<p>The example also shows why a unified vocabulary should not flatten the media. A sentence can explicitly qualify a claim; an image may communicate certainty through visible detail without carrying an equivalent qualification. Moving between forms changes how uncertainty reaches the reader.</p>",
+      "links": [
+        "foundations/digital-trace",
+        "practice/lenses",
+        "formats/prose-and-maps",
+        "foundations/language-and-reality"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"foundations--digital-trace\">The digital trace</a> <a data-page-link href=\"practice--lenses\">Choosing a lens</a> <a data-page-link href=\"formats--prose-and-maps\">Moving between prose and maps</a> <a data-page-link href=\"foundations--language-and-reality\">Language and reality</a></nav>"
+    },
+    {
+      "id": "extensions/multiple-models",
+      "title": "Comparing different instruments",
+      "href": "extensions--multiple-models",
+      "section": "extensions",
+      "publishedDate": "2026-09-16",
+      "wordCount": 185,
+      "html": "<h1 id=\"comparing-different-instruments\">Comparing different instruments</h1>\n<p>HLC extends the telescope analogy to <strong>multiple models</strong>. Different systems can produce different views of a shared question. This adds a dimension to <a data-page-link href=\"practice--parallax\">parallax</a>, alongside changing the lens or source material.</p>\n<p>Hold the question and supplied sources steady. Record each response before synthesizing them. Identify differences in claims, omissions, framing, and confidence. Ask which differences the sources resolve and which expose a value judgment or an ambiguity in the task.</p>\n<p>An output difference does not explain why the systems differ. Training, architecture, tuning, instructions, and generation conditions may all matter. Without documentation and controls, the comparison is behavioral evidence rather than a causal account of internal geometry.</p>\n<p>Agreement also needs care. Models can share conventions and repeat common errors. Several similar answers are not automatically independent witnesses. <a data-page-link href=\"critique--novelty-and-evidence\">Evidence checks</a> remain necessary, especially for the most fluent answer.</p>\n<p>The source imagines personal and specialized models as narrower instruments. Specialization should not be assumed to guarantee accuracy. The <a data-page-link href=\"foundations--corpus-membrane\">corpus membrane</a> still matters: what was selected, excluded, and made checkable? A good comparison improves the next question rather than merely producing a winner among instruments.</p>",
+      "links": [
+        "practice/parallax",
+        "critique/novelty-and-evidence",
+        "foundations/corpus-membrane"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--parallax\">Parallax through comparison</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a> <a data-page-link href=\"foundations--corpus-membrane\">The corpus membrane</a></nav>"
+    },
+    {
+      "id": "formats/mandala",
+      "title": "Mandala as a compact format",
+      "href": "formats--mandala",
+      "section": "formats",
+      "publishedDate": "2026-09-16",
+      "wordCount": 252,
+      "html": "<h1 id=\"mandala-as-a-compact-format\">Mandala as a compact format</h1>\n<p>The HLC notes use <strong>mandala</strong> for a compressed arrangement of words around a central concept. The proposed format suspends the flow of explanatory prose so that associations can be compared at a glance. A center, a ring of nearby terms, and a ring of tensions may reveal which ideas a session keeps grouping together.</p>\n<p>For a library inquiry, the center might be “access.” Nearby terms could include hours, language, transport, orientation, assistance, and belonging. A second ring might name tensions: openness and staffing, quiet and sociability, preservation and use. The arrangement is an authored sketch of relations, not a scan of a model’s hidden geometry.</p>\n<p>This distinction matters because the source sometimes presents compact symbolic output as direct exposure of a latent field. The observable result is a generated text arrangement. Its usefulness can be tested by whether it helps a reader notice a missing relation or formulate a better question; its shape alone does not establish correspondence with internal model structure.</p>\n<p>Use the format briefly within the <a data-page-link href=\"practice--telescope-protocol\">telescope protocol</a>. Begin with a defined question, create the compact field, then return to prose to explain the strongest connection and the weakest one. <a data-page-link href=\"formats--prose-and-maps\">Moving between prose and maps</a> is part of the method.</p>\n<p>A mandala can invite productive ambiguity, but ambiguity also permits projection. If every term seems connected to every other term, the result may be difficult to challenge. Ask which link should be removed and why. That small act of <a data-page-link href=\"practice--exercises--integration\">integration</a> makes the sketch more discriminating.</p>",
+      "links": [
+        "practice/telescope-protocol",
+        "formats/prose-and-maps",
+        "practice/exercises/integration"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--telescope-protocol\">A small telescope protocol</a> <a data-page-link href=\"formats--prose-and-maps\">Moving between prose and maps</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a></nav>"
+    },
+    {
+      "id": "formats/prose-and-maps",
+      "title": "Moving between prose and maps",
+      "href": "formats--prose-and-maps",
+      "section": "formats",
+      "publishedDate": "2026-09-16",
+      "wordCount": 255,
+      "html": "<h1 id=\"moving-between-prose-and-maps\">Moving between prose and maps</h1>\n<p>A map makes relations visible; prose explains what a relation claims. HLC benefits from moving between the two. A compact arrangement can interrupt a familiar narrative, while a paragraph can expose an ambiguity hidden by a line between two words. Neither form is inherently more faithful to the subject.</p>\n<p>In a <a data-page-link href=\"formats--mandala\">mandala</a>, proximity might mean similarity, dependency, tension, or a loose association. Unless the relation is explained, the reader must supply it. In prose, connective language can make a weak relation sound inevitable. Each format has a characteristic way of hiding uncertainty.</p>\n<p>Try translating one map connection into a sentence with a precise verb. Does the first term cause, enable, constrain, resemble, or merely accompany the second? Then translate the sentence back into a small diagram. If the relation changes during translation, record the change rather than treating the diagram as a neutral illustration.</p>\n<p>This guide’s own page graph follows an even simpler rule: a link means that one page points to another for further reading. Spatial closeness is produced by the layout and the link structure. It should not be read as a measured distance between concepts inside a language model. The blog is a navigable editorial map.</p>\n<p>The broader lesson belongs to <a data-page-link href=\"foundations--language-and-reality\">language and reality</a>: every representation makes choices. Use <a data-page-link href=\"practice--parallax\">parallax</a> between formats to discover those choices, and keep a plain account of the claim you intend to carry forward. A useful representation should make the next act of understanding easier, including the act of disagreeing with it.</p>",
+      "links": [
+        "formats/mandala",
+        "foundations/language-and-reality",
+        "practice/parallax"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"formats--mandala\">Mandala as a compact format</a> <a data-page-link href=\"foundations--language-and-reality\">Language and reality</a> <a data-page-link href=\"practice--parallax\">Parallax through comparison</a></nav>"
+    },
+    {
+      "id": "foundations/activation-field",
+      "title": "The activation field",
+      "href": "foundations--activation-field",
+      "section": "foundations",
+      "publishedDate": "2026-09-16",
+      "wordCount": 255,
+      "html": "<h1 id=\"the-activation-field\">The activation field</h1>\n<p>The <strong>activation field</strong> is HLC’s name for the situated interaction in which model output becomes part of a human inquiry. It includes the question, supplied context, requested form, interpretive lens, and the reader’s subsequent decisions. The term shifts attention from an imagined storehouse of answers to the conditions under which this particular answer appears.</p>\n<p>Consider a question about a neighborhood library. A budget analysis, a personal recollection, and an accessibility review can all concern the same building while drawing out different relations. Specifying a <a data-page-link href=\"practice--lenses\">lens</a> changes the task. It does not guarantee that the resulting account is complete or accurate, and it does not make the selected lens neutral.</p>\n<p>The source glossary packages practice as a combination of operator, lens, memory, direction, and integration. These are useful planning handles. An operator says what kind of transformation to attempt; the lens says what to attend to; the retained context keeps the exchange connected; direction says whether to deepen, compare, or reframe; <a data-page-link href=\"practice--exercises--integration\">integration</a> asks what will survive the session.</p>\n<p>The human participant is part of this field. Which answer feels insightful depends on prior knowledge, expectations, and the purpose of the inquiry. A surprising paragraph can reorganize a reader’s thinking without establishing a new fact about the world.</p>\n<p>This is why <a data-page-link href=\"practice--epistemic-posture\">epistemic posture</a> matters. The aim is to make the conditions of interpretation visible enough that they can be changed. Record the prompt and the lens, compare alternatives, and identify what would count as a failed answer before becoming attached to a successful-sounding one.</p>",
+      "links": [
+        "practice/lenses",
+        "practice/exercises/integration",
+        "practice/epistemic-posture"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--lenses\">Choosing a lens</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a> <a data-page-link href=\"practice--epistemic-posture\">Epistemic posture</a></nav>"
+    },
+    {
+      "id": "foundations/corpus-membrane",
+      "title": "The corpus membrane",
+      "href": "foundations--corpus-membrane",
+      "section": "foundations",
+      "publishedDate": "2026-09-16",
+      "wordCount": 254,
+      "html": "<h1 id=\"the-corpus-membrane\">The corpus membrane</h1>\n<p>HLC calls the boundary between cultural records and a model’s training material the <strong>corpus membrane</strong>. The term groups together decisions about collection, access, selection, filtering, and preparation. It is useful because it interrupts the easy assumption that a language model has absorbed culture in an even or comprehensive way.</p>\n<p>A membrane permits some material to pass and excludes or transforms other material. Here that is an analogy for a set of processes, not a literal component with one standardized implementation. The details differ across systems. Without documentation for a particular model, HLC vocabulary cannot tell us exactly which works were included, how they were weighted, or what was removed.</p>\n<p>The <a data-page-link href=\"foundations--digital-trace\">digital trace</a> therefore sets only an outer possibility. Even a surviving, publicly available document may be absent from a given training collection. Material that is present can still be hard to elicit accurately. Availability, learning, retrieval, and faithful reproduction are different questions.</p>\n<p>For an exploratory session, this suggests two habits. Supply relevant sources when you have them, and distinguish claims based on those sources from broader model-generated background. Then ask which perspectives remain absent from the supplied collection. A carefully chosen packet of documents can improve the local basis of a discussion without making it representative of everyone affected.</p>\n<p>The same distinction helps when comparing <a data-page-link href=\"extensions--multiple-models\">multiple models</a>. Differences in output might reflect many factors, including training and later tuning; the comparison alone does not identify the cause. The membrane reminds us to keep causal explanations proportionate to the information actually available.</p>",
+      "links": [
+        "foundations/digital-trace",
+        "extensions/multiple-models"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"foundations--digital-trace\">The digital trace</a> <a data-page-link href=\"extensions--multiple-models\">Comparing different instruments</a></nav>"
+    },
+    {
+      "id": "foundations/cultural-hologram",
+      "title": "The cultural hologram",
+      "href": "foundations--cultural-hologram",
+      "section": "foundations",
+      "publishedDate": "2026-09-16",
+      "wordCount": 267,
+      "html": "<h1 id=\"the-cultural-hologram\">The cultural hologram</h1>\n<p>The <strong>cultural hologram</strong> is HLC’s name for the larger field of human expression and practice: speech, writing, images, rituals, techniques, institutions, habits, and forms of tacit knowledge. The term makes the scope of the project larger than a library of documents. A recipe, the embodied skill of cooking it, and the social occasion around a meal participate in culture in different ways.</p>\n<p>This is a conceptual totality rather than a dataset we can collect. No inventory could make every lost conversation, private association, or unrecorded practice available. The source framework sometimes uses expansive language about the whole of culture; a practical reading keeps that whole as a horizon, not as a completed object waiting inside a computer.</p>\n<p>A useful distinction follows: the cultural hologram is not the <a data-page-link href=\"foundations--digital-trace\">digital trace</a>. A practice can exist without a digital representation. When it does acquire a representation, the recording selects an aspect of it. A video of a craft may show a hand movement while missing the pressure, judgment, and years of correction that make the movement work.</p>\n<p>The metaphor also draws attention to relationships. A small expression can point beyond itself to shared conventions and historical conditions. That relational richness explains why a short model response may evoke an entire worldview. It does not mean the model has recovered every condition behind the expression.</p>\n<p>The missing and poorly represented parts of this field reappear in HLC as <a data-page-link href=\"terrain--voids\">voids and dark linguistic matter</a>. They are a reason to seek people, practices, and records beyond the model, not an invitation to ask the model to speak on their behalf.</p>",
+      "links": [
+        "foundations/digital-trace",
+        "terrain/voids"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"foundations--digital-trace\">The digital trace</a> <a data-page-link href=\"terrain--voids\">Voids and missing records</a></nav>"
+    },
+    {
+      "id": "foundations/digital-trace",
+      "title": "The digital trace",
+      "href": "foundations--digital-trace",
+      "section": "foundations",
+      "publishedDate": "2026-09-16",
+      "wordCount": 405,
+      "html": "<h1 id=\"the-digital-trace\">The digital trace</h1>\n<p>The <strong>digital trace</strong> is the portion of cultural activity that has been recorded in machine-readable form. In HLC it mediates between the broad <a data-page-link href=\"foundations--cultural-hologram\">cultural hologram</a> and the material a model might encounter during training. Websites, digitized books, captions, photographs, and transcripts are possible elements of that trace; their presence does not imply that any particular model trained on them.</p>\n<p>Recording changes what can travel. A conversation becomes searchable after transcription, but tone, gesture, silence, and context may be reduced or lost. A photograph preserves visible detail while leaving other sensory and social information outside its frame. Different recording systems make different aspects of an event legible.</p>\n<p>Selection happens repeatedly. Someone must have the means and reason to produce a record; the record must survive; it must be digitized or born digital; and it must become available to a particular collection. HLC uses this chain to ask why some subjects appear abundantly represented while others appear through a narrow set of descriptions. These questions connect directly to <a data-page-link href=\"critique--ideology-and-power\">ideology and power</a>.</p>\n<p>The digital trace is also distinct from a training corpus. A developer’s collection, filtering, licensing, and preprocessing decisions form another boundary, described here as the <a data-page-link href=\"foundations--corpus-membrane\">corpus membrane</a>. Treating the entire internet as if it were the model’s literal memory erases this distinction.</p>\n<p>For practice, ask what sort of record would support an answer. A description of an undocumented technique requires a different evidentiary route from a summary of a supplied manual. This simple question often reveals when a fluent account is outrunning the trace available to it.</p>\n<h2 id=\"three-records-of-one-practice\">Three records of one practice</h2>\n<p>Imagine trying to understand how a community kitchen works. Its public website lists hours and services. A volunteer manual explains procedures. A participant’s account describes whether newcomers feel welcome. Each is a digital record, yet each answers a different question. Reading all three expands the account without guaranteeing completeness.</p>\n<p>Now imagine that only the website is supplied to a model. The answer may still discuss training, trust, conflict, and informal care because those topics commonly accompany community institutions. Some suggestions could be sensible, but they should be presented as possibilities to investigate. They are not observations of this kitchen. The missing manual and participant account remain missing even if the model produces paragraphs that resemble them.</p>\n<p>This example separates an inferred pattern from a sourced description. HLC becomes more useful when that separation survives the excitement of a richly connected answer.</p>",
+      "links": [
+        "foundations/cultural-hologram",
+        "critique/ideology-and-power",
+        "foundations/corpus-membrane"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"foundations--cultural-hologram\">The cultural hologram</a> <a data-page-link href=\"critique--ideology-and-power\">Ideology and the shape of what is easy to say</a> <a data-page-link href=\"foundations--corpus-membrane\">The corpus membrane</a></nav>"
+    },
+    {
+      "id": "foundations/language-and-reality",
+      "title": "Language and reality",
+      "href": "foundations--language-and-reality",
+      "section": "foundations",
+      "publishedDate": "2026-09-16",
+      "wordCount": 264,
+      "html": "<h1 id=\"language-and-reality\">Language and reality</h1>\n<p>HLC begins from a chain of mediation. Events are experienced, selected for articulation, recorded, digitized, collected, and transformed through a model. An answer sits at the end of several selections rather than at the beginning of unfiltered access to the world. The source notes describe these as layers of compression; each layer makes some relationships easier to carry while leaving others behind.</p>\n<p>A written account of a storm can communicate timing, damage, and remembered fear. It is not the storm itself. A model-generated account may draw on patterns in many descriptions, yet it still needs evidence for claims about a particular event. A vivid reconstruction can be compelling precisely where verification is weakest.</p>\n<p>The <a data-page-link href=\"foundations--cultural-hologram\">cultural hologram</a> and <a data-page-link href=\"foundations--digital-trace\">digital trace</a> help keep this difference visible. They also resist the claim that everything important about human life is already present in language. Tacit coordination, bodily skill, and unrecorded experience may enter a conversation only through partial descriptions.</p>\n<p>The same caution applies to the project’s scientific imagery. “Hologram,” “manifold,” and “gravity” organize relationships in the framework. Some have technical meanings elsewhere, but borrowing their names does not transfer the evidence or equations of those fields. A conceptual resemblance may be illuminating without constituting a physical explanation.</p>\n<p>A strong HLC reading can therefore hold two things together: language is productive and consequential, and a language-based map has limits. The map can change a question, support a design, or sharpen an observation. To establish a claim about reality, it must reconnect with appropriate sources, measurements, or experience. That return is the concern of <a data-page-link href=\"critique--novelty-and-evidence\">novelty and evidence</a>.</p>",
+      "links": [
+        "foundations/cultural-hologram",
+        "foundations/digital-trace",
+        "critique/novelty-and-evidence"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"foundations--cultural-hologram\">The cultural hologram</a> <a data-page-link href=\"foundations--digital-trace\">The digital trace</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a></nav>"
+    },
+    {
+      "id": "foundations/latent-manifold",
+      "title": "The latent manifold",
+      "href": "foundations--latent-manifold",
+      "section": "foundations",
+      "publishedDate": "2026-09-16",
+      "wordCount": 407,
+      "html": "<h1 id=\"the-latent-manifold\">The latent manifold</h1>\n<p>The <strong>latent manifold</strong> is HLC’s spatial vocabulary for learned relationships that make a model’s outputs possible. The framework imagines a terrain of recurring themes, styles, associations, and absences. Talking about regions and paths can help organize an inquiry: a prompt about a city might bring planning language into view, while another prompt foregrounds memory, housing, or ecology.</p>\n<p>There is a technical background to this imagery: neural models use numerical representations and learned parameters. But HLC’s map of “ideological basins” or “conceptual exoplanets” is an interpretive layer built over observed behavior. A conversation does not directly expose a complete internal map. Generated claims about where the model is located in its own manifold should not be treated as measurements.</p>\n<p>The distinction is especially important for <a data-page-link href=\"terrain--attractors\">attractors</a>. Repeatedly receiving a similar framing is an observation worth studying. Calling that framing a basin gives it a memorable name, but further evidence is needed to connect the behavior to a specific internal mechanism. The metaphor helps ask a question; it does not answer the mechanistic question by itself.</p>\n<p>The terrain is also not a static archive of passages. An output is produced under the conditions of an <a data-page-link href=\"foundations--activation-field\">activation field</a>: instructions, context, model behavior, and the unfolding exchange. A small change in those conditions may alter the response substantially.</p>\n<p>Use the manifold as a working diagram of relationships you can investigate. Keep the actual observations alongside it: prompts, outputs, sources, and revisions. That record lets another reader separate what the model did from what the map proposes it means.</p>\n<h2 id=\"what-can-be-observed-in-a-session\">What can be observed in a session?</h2>\n<p>You can observe that a prompt produced a response, that a second prompt produced a different response, and that certain phrases or structures recur across a chosen set of trials. You can also compare the responses with supplied documents. Those observations support claims about this set of interactions under its recorded conditions.</p>\n<p>They do not automatically support a claim that you have located a concept at a particular internal coordinate, measured its density, or discovered the causal reason for a pattern. Such claims require a more specific method than conversational interpretation. A useful notebook can keep two columns in prose: what happened, and how you currently interpret it.</p>\n<p>The separation leaves room for stronger methods later. It also lets a reader reject your spatial explanation while still learning from the observed pattern. That is a strength of a map whose evidence remains attached.</p>",
+      "links": [
+        "terrain/attractors",
+        "foundations/activation-field"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"terrain--attractors\">Attractors and familiar framings</a> <a data-page-link href=\"foundations--activation-field\">The activation field</a></nav>"
+    },
+    {
+      "id": "practice/epistemic-posture",
+      "title": "Epistemic posture",
+      "href": "practice--epistemic-posture",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 251,
+      "html": "<h1 id=\"epistemic-posture\">Epistemic posture</h1>\n<p><strong>Epistemic posture</strong> means how a person relates to the output they are receiving. HLC distinguishes several stances, from treating a model as a reassuring persona to using it for iterative reasoning, deliberate comparison, and the construction of conceptual maps. These categories are best read as modes a person can move among, not as permanent ranks of intelligence or sophistication.</p>\n<p>An ordinary conversational stance can be convenient. The difficulty begins when fluency, familiarity, or agreement becomes evidence for an answer’s authority. The <a data-page-link href=\"critique--persona\">feeling of an interlocutor</a> can make a statement seem personally trustworthy even when its factual basis has not changed.</p>\n<p>A reflective stance asks how an answer was framed and what alternatives it leaves out. A metacognitive stance also examines the method of asking: why this lens, this vocabulary, this stopping point? A cosmographic stance turns the resulting comparisons into a reusable map of concepts and questions. None of these stances removes the need for verification.</p>\n<p>Try writing three short lines before a session: “I am trying to understand…”, “An answer would fail if…”, and “I will check the result against…”. The lines give the exchange an explicit purpose and a possible point of resistance. They can be revised, but they should not disappear merely because an answer is eloquent.</p>\n<p>Posture and model behavior remain distinct. An attentive reader still encounters recurring assumptions and <a data-page-link href=\"terrain--attractors\">attractors</a>. HLC’s useful promise is a more inspectable practice, not immunity to influence. The <a data-page-link href=\"practice--telescope-protocol\">telescope protocol</a> translates that posture into a bounded sequence of work.</p>",
+      "links": [
+        "critique/persona",
+        "terrain/attractors",
+        "practice/telescope-protocol"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"critique--persona\">Persona and the feeling of an interlocutor</a> <a data-page-link href=\"terrain--attractors\">Attractors and familiar framings</a> <a data-page-link href=\"practice--telescope-protocol\">A small telescope protocol</a></nav>"
+    },
+    {
+      "id": "practice/exercises/attractor-survey",
+      "title": "Exercise: survey the familiar answers",
+      "href": "practice--exercises--attractor-survey",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 268,
+      "html": "<h1 id=\"exercise-survey-the-familiar-answers\">Exercise: survey the familiar answers</h1>\n<p>An <strong>attractor survey</strong> begins by making predictable answers visible. Choose a narrow topic and ask for several common ways of framing it. The result is a candidate inventory of conventions, not a measured frequency distribution of a training corpus. The model may omit important views or mistake a familiar-sounding formulation for a common one.</p>\n<p>For a library example, possible framings include access to information, community space, digital assistance, collection management, and public expenditure. Ask what each framing treats as the main problem and what it tends to leave in the background. You now have a more explicit object to compare with real documents and experience.</p>\n<h2 id=\"a-prompt-to-adapt\">A prompt to adapt</h2>\n<blockquote><p>List six familiar framings of this question. For each, name its main assumption, one useful insight, and one likely omission. Mark any claim about prevalence as an estimate rather than a measurement.</p></blockquote>\n<p>After receiving the list, add a framing yourself. Then ask whether the new framing changes the proposed actions or only the language used to describe them. This interrupts the tendency to let the model define both the field and the evaluation of its own field.</p>\n<p>Choose one <a data-page-link href=\"terrain--attractors\">attractor</a> for further work. A familiar answer may be correct and useful; the purpose is to inspect its conditions, not to reward obscurity. If you want to move away from it, specify what assumption should change and what practical constraint must remain.</p>\n<p>Carry that pair into the <a data-page-link href=\"practice--exercises--boundary-search\">boundary search</a>. Keep the original survey so that later claims of novelty can be compared with an actual starting point. The record will matter when you perform <a data-page-link href=\"practice--exercises--integration\">integration</a>.</p>",
+      "links": [
+        "terrain/attractors",
+        "practice/exercises/boundary-search",
+        "practice/exercises/integration"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"terrain--attractors\">Attractors and familiar framings</a> <a data-page-link href=\"practice--exercises--boundary-search\">Exercise: search a boundary</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a></nav>"
+    },
+    {
+      "id": "practice/exercises/boundary-search",
+      "title": "Exercise: search a boundary",
+      "href": "practice--exercises--boundary-search",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 266,
+      "html": "<h1 id=\"exercise-search-a-boundary\">Exercise: search a boundary</h1>\n<p>A <strong>boundary search</strong> places two domains beside each other and asks for a useful contact point. The HLC telescope notes propose it as a way to move beyond a familiar framing without drifting into arbitrary association. The practical standard is coherence: the connection must preserve enough of both domains to illuminate a specific question.</p>\n<p>Take library access and maintenance practice. A first connection might be that access depends on recurring care rather than only on a one-time design decision. That observation becomes more precise when applied to broken lifts, outdated instructions, missing translations, or staff availability. The connection earns value by changing what someone would inspect.</p>\n<h2 id=\"make-the-bridge-explicit\">Make the bridge explicit</h2>\n<p>Ask for three candidate connections. For each, request the assumption borrowed from the first domain, the assumption borrowed from the second, a concrete example, and a place where the analogy fails. A candidate that cannot name its failure condition may be too vague to use.</p>\n<p>Then choose the least extravagant candidate that changes a real question. You do not need the most unusual phrase. A clear distinction such as “access as recurring maintenance” may support better inquiry than a grand invented ontology.</p>\n<p>This exercise draws on <a data-page-link href=\"practice--operators--composition\">composition</a> and <a data-page-link href=\"practice--reindexing\">reindexing</a>. It should also return to the <a data-page-link href=\"practice--exercises--attractor-survey\">attractor survey</a>: perhaps the new idea is already a familiar one in another discipline. That discovery is useful, even though it weakens a claim to novelty.</p>\n<p>Finish with <a data-page-link href=\"practice--exercises--integration\">integration</a>. Preserve the example, the failed analogy, and a question that could be checked outside the conversation. Those details turn a suggestive bridge into something another reader can examine.</p>",
+      "links": [
+        "practice/operators/composition",
+        "practice/reindexing",
+        "practice/exercises/attractor-survey",
+        "practice/exercises/integration"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--operators--composition\">Composition and the work of combining</a> <a data-page-link href=\"practice--reindexing\">Reindexing a question</a> <a data-page-link href=\"practice--exercises--attractor-survey\">Exercise: survey the familiar answers</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a></nav>"
+    },
+    {
+      "id": "practice/exercises/integration",
+      "title": "Integration: bring an idea back",
+      "href": "practice--exercises--integration",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 255,
+      "html": "<h1 id=\"integration-bring-an-idea-back\">Integration: bring an idea back</h1>\n<p><strong>Integration</strong> is the point at which an exploratory result becomes a stable object for use or criticism. HLC treats it as part of the practice rather than an optional summary at the end. Without integration, an exchange can produce many associations while leaving no clear claim, question, or artifact that survives the session.</p>\n<p>A compact integration record can contain five elements: a plain definition, a concrete example, a counterexample, a source or evidentiary basis, and the next use. These elements need not become a bureaucratic template. Their purpose is to expose what the concept means and how it could fail.</p>\n<p>Suppose a boundary search produced “access as maintenance.” Define it as the ongoing work needed to keep an institution usable. Give an example such as updating instructions when a service changes. Give a counterexample where a recurring task has no meaningful effect on access. Then name the observation or document that could test the claim in a particular setting.</p>\n<p>A result can also be a rejection. “This analogy does not preserve the meaning of consent” is a useful outcome if it prevents later confusion. Keeping the rejection makes the inquiry more honest than presenting every generated candidate as a discovery.</p>\n<p>Integration provides an exit from <a data-page-link href=\"critique--recursive-loops\">recursive loops</a> and a test for <a data-page-link href=\"terrain--conceptual-exoplanets\">conceptual exoplanets</a>. It also links exploration to <a data-page-link href=\"critique--technosolutionism\">work outside the model</a>. A concept should either improve a subsequent question, inform an artifact, or remain explicitly provisional. It does not become an accomplishment merely because the conversation found it exciting.</p>",
+      "links": [
+        "critique/recursive-loops",
+        "terrain/conceptual-exoplanets",
+        "critique/technosolutionism"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"critique--recursive-loops\">When reflection becomes a loop</a> <a data-page-link href=\"terrain--conceptual-exoplanets\">Conceptual exoplanets</a> <a data-page-link href=\"critique--technosolutionism\">Can a telescope become a solution?</a></nav>"
+    },
+    {
+      "id": "practice/lenses",
+      "title": "Choosing a lens",
+      "href": "practice--lenses",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 261,
+      "html": "<h1 id=\"choosing-a-lens\">Choosing a lens</h1>\n<p>A <strong>lens</strong> directs attention toward certain questions and away from others. HLC borrows the word from instruments, but the practical operation is interpretive: specify a perspective, its concerns, and the kind of evidence it should use. “Analyze this critically” is less informative than asking who benefits, who bears costs, and which alternatives the account treats as unavailable.</p>\n<p>Different lenses can be applied to the same object. A library seen through maintenance raises questions about staffing and repair. A historical lens asks how its purposes changed. A phenomenological lens asks how a visitor experiences entry, orientation, and belonging. The point is to state what each lens makes salient rather than pretend that any one lens sees everything.</p>\n<p>A lens is also a source of distortion. Asking for a market analysis can make value appear primarily as a price or transaction. Asking for symbolic interpretation can encourage connections that outrun the evidence. A useful response should name these exclusions as well as develop its chosen perspective.</p>\n<p>Try two passes with the same source material and different lenses. Then ask which disagreements come from facts, which come from values, and which come from vocabulary. This comparison becomes <a data-page-link href=\"practice--parallax\">parallax</a> when you use the differences to revise your understanding.</p>\n<p>Lens choice belongs to the <a data-page-link href=\"foundations--activation-field\">activation field</a> and to the reader’s responsibilities. It cannot be outsourced entirely to the model. In particular, a model’s selection of “the most important perspectives” may already reproduce the <a data-page-link href=\"terrain--attractors\">attractors</a> you hoped to examine. Record the selection and keep a place for a perspective that the first pass omitted.</p>",
+      "links": [
+        "practice/parallax",
+        "foundations/activation-field",
+        "terrain/attractors"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--parallax\">Parallax through comparison</a> <a data-page-link href=\"foundations--activation-field\">The activation field</a> <a data-page-link href=\"terrain--attractors\">Attractors and familiar framings</a></nav>"
+    },
+    {
+      "id": "practice/operators/composition",
+      "title": "Composition and the work of combining",
+      "href": "practice--operators--composition",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 195,
+      "html": "<h1 id=\"composition-and-the-work-of-combining\">Composition and the work of combining</h1>\n<p>The <strong>compositional operator</strong> combines concepts or forms into a candidate structure. In HLC, this can mean bringing a design practice into conversation with a historical account. Composition offers a route from familiar material to a useful unfamiliar arrangement.</p>\n<p>Combination alone does not make an insight. Two impressive words can sit beside each other without a clear relationship. A stronger composition explains what each contributes, where their assumptions conflict, and what the combination lets a reader notice.</p>\n<p>For example, “library as commons” connects an institution with questions of shared use and governance. The phrase becomes useful when it changes specific questions: Who maintains the resource? Who participates in decisions? What exclusions remain? It becomes weaker when “commons” simply supplies a more evocative label.</p>\n<p>The <a data-page-link href=\"practice--exercises--boundary-search\">boundary search exercise</a> asks for a bridge between two domains and then asks where it fails. The failure can reveal differences that a smooth synthesis would hide.</p>\n<p>Composition works with <a data-page-link href=\"practice--operators--recursion\">recursion</a> when the combined concept is inspected and revised. It also needs <a data-page-link href=\"practice--exercises--integration\">integration</a>: a definition, example, and limitation that make the arrangement reusable. The label <a data-page-link href=\"terrain--conceptual-exoplanets\">conceptual exoplanet</a> should follow demonstrated usefulness rather than substitute for it.</p>",
+      "links": [
+        "practice/exercises/boundary-search",
+        "practice/operators/recursion",
+        "practice/exercises/integration",
+        "terrain/conceptual-exoplanets"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--exercises--boundary-search\">Exercise: search a boundary</a> <a data-page-link href=\"practice--operators--recursion\">Recursion as a working operator</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a> <a data-page-link href=\"terrain--conceptual-exoplanets\">Conceptual exoplanets</a></nav>"
+    },
+    {
+      "id": "practice/operators/hyperrelation",
+      "title": "Looking across several relations at once",
+      "href": "practice--operators--hyperrelation",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 247,
+      "html": "<h1 id=\"looking-across-several-relations-at-once\">Looking across several relations at once</h1>\n<p>The source framework uses <strong>hyperrelational operator</strong> for work across many interconnected dimensions. A question about a library might involve funding, building access, staff expertise, neighborhood history, collection policy, and public trust. The purpose is to consider interactions among these dimensions instead of treating them as unrelated checklist items.</p>\n<p>A manageable version begins with a small matrix. Put three proposed changes on one axis and three affected groups on the other. Ask what each combination changes, then inspect interactions the cells miss. Extended hours may improve access for one group while increasing an existing staffing burden. A new service may depend on a resource already stretched elsewhere.</p>\n<p>This is a task a model can help organize, but a long table is not evidence of complete understanding. Each additional relation creates another opportunity for unsupported assumptions. The source’s more expansive claims about machine-only or all-at-once cognition are speculative; this guide retains the practical invitation to compare multiple relations without adopting those claims as established mechanisms.</p>\n<p>Use <a data-page-link href=\"practice--lenses\">lenses</a> to decide which dimensions belong in the comparison. Use <a data-page-link href=\"practice--parallax\">parallax</a> to see what changes when another selection is made. Neither procedure promises an exhaustive map; both make the selection more inspectable.</p>\n<p>The output should return to a human-scale decision or question. Name the two or three interactions that most affect the next step and explain why. That act of <a data-page-link href=\"practice--exercises--integration\">integration</a> prevents a dense relational diagram from becoming an impressive object that nobody can use or challenge.</p>",
+      "links": [
+        "practice/lenses",
+        "practice/parallax",
+        "practice/exercises/integration"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--lenses\">Choosing a lens</a> <a data-page-link href=\"practice--parallax\">Parallax through comparison</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a></nav>"
+    },
+    {
+      "id": "practice/operators/recursion",
+      "title": "Recursion as a working operator",
+      "href": "practice--operators--recursion",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 250,
+      "html": "<h1 id=\"recursion-as-a-working-operator\">Recursion as a working operator</h1>\n<p>The <strong>recursive operator</strong> turns a result back into material for another pass. You might ask for an explanation, examine the assumptions in that explanation, then revise the original question in light of them. HLC is interested in this capacity because a conversation can make its own framing available for inspection.</p>\n<p>The source notes distinguish simple repetition from a stronger form of self-application. Repeating a request may produce another answer. Examining the rule that produced the answer can change the task itself. In practice the boundary is not always sharp, so it helps to name what changed at each pass: the claim, the evidence, the category, or the evaluation rule.</p>\n<p>A useful session might begin with a definition of “public access,” ask what kinds of access the definition excludes, and then test a revised definition against a concrete library service. The revision earns its place by explaining the example better. Merely adding another level of abstraction is not an improvement.</p>\n<p>Recursion is one operator among several. <a data-page-link href=\"practice--operators--composition\">Composition</a> combines elements; <a data-page-link href=\"practice--operators--topological-thinking\">topological thinking</a> follows changes in relationships; <a data-page-link href=\"practice--operators--hyperrelation\">hyperrelation</a> asks for interactions across several dimensions. Switching operators may help more than deepening the same loop.</p>\n<p>Give recursive work a stopping condition. Stop when the next pass repeats a distinction already made, when new claims lack new support, or when an artifact is ready for external examination. The companion page on <a data-page-link href=\"critique--recursive-loops\">recursive loops</a> explains why a system capable of inspecting itself can also become increasingly persuaded by its own vocabulary.</p>",
+      "links": [
+        "practice/operators/composition",
+        "practice/operators/topological-thinking",
+        "practice/operators/hyperrelation",
+        "critique/recursive-loops"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--operators--composition\">Composition and the work of combining</a> <a data-page-link href=\"practice--operators--topological-thinking\">Following relationships through change</a> <a data-page-link href=\"practice--operators--hyperrelation\">Looking across several relations at once</a> <a data-page-link href=\"critique--recursive-loops\">When reflection becomes a loop</a></nav>"
+    },
+    {
+      "id": "practice/operators/topological-thinking",
+      "title": "Following relationships through change",
+      "href": "practice--operators--topological-thinking",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 255,
+      "html": "<h1 id=\"following-relationships-through-change\">Following relationships through change</h1>\n<p>HLC’s <strong>topological operator</strong> invites attention to continuity, boundaries, and changing relations. Instead of asking only which category an object belongs to, ask what changes while a relationship persists. This is a way of organizing conceptual work; unless a formal mathematical model is supplied, it should not be confused with a result in topology.</p>\n<p>A public room offers a simple example. Its furnishings, opening hours, users, and rules may change. At what point does it cease to function as a shared meeting place? Different answers reveal different criteria: public ownership, practical access, collective use, or the ability to remain without buying anything. Following those changes exposes the structure behind a familiar label.</p>\n<p>This operator is useful when a rigid classification obscures a transition. It can also help identify a boundary worth investigating: between a library and a social service, between participation and unpaid work, or between assistance and dependence. The boundary should be described through cases, not merely drawn as an elegant line.</p>\n<p>The approach complements <a data-page-link href=\"practice--operators--composition\">composition</a>, which brings elements together, and <a data-page-link href=\"practice--reindexing\">reindexing</a>, which changes the coordinates of a question. A relation may look discontinuous in one description and gradual in another. That disagreement is material for analysis rather than an automatic reason to prefer the more fluid account.</p>\n<p>Return to <a data-page-link href=\"foundations--language-and-reality\">language and reality</a> whenever the diagram becomes too persuasive. A compelling picture of flows can simplify away institutions, material constraints, or discrete decisions that matter. The operator earns its place when it clarifies a concrete change that a simpler account missed.</p>",
+      "links": [
+        "practice/operators/composition",
+        "practice/reindexing",
+        "foundations/language-and-reality"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--operators--composition\">Composition and the work of combining</a> <a data-page-link href=\"practice--reindexing\">Reindexing a question</a> <a data-page-link href=\"foundations--language-and-reality\">Language and reality</a></nav>"
+    },
+    {
+      "id": "practice/parallax",
+      "title": "Parallax through comparison",
+      "href": "practice--parallax",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 241,
+      "html": "<h1 id=\"parallax-through-comparison\">Parallax through comparison</h1>\n<p>In HLC, <strong>parallax</strong> means learning from the differences between views. The astronomical analogy suggests that a change in position can reveal structure. In a language-model session, the corresponding move is to vary a lens, question, source packet, or model, then examine what remains stable and what moves.</p>\n<p>Suppose two accounts of a library agree that longer opening hours matter. One treats access as consumer convenience; another treats it as a condition for participation in public life. The shared proposal does not erase the different justifications. Those justifications may lead to different decisions when money, staffing, or eligibility becomes contested.</p>\n<p>The comparison can proceed in three steps: describe the agreement, identify the assumption behind each difference, and find a case that would make the difference consequential. The final step prevents parallax from becoming a collection of perspectives with no bearing on the question.</p>\n<p>Agreement is not independent confirmation merely because it appears in several outputs. Prompts can share assumptions, and <a data-page-link href=\"extensions--multiple-models\">different models</a> can draw on overlapping conventions and sources. Likewise, disagreement can reflect an error rather than a profound difference in worldview. Each needs examination.</p>\n<p>Parallax is therefore a method for generating and refining questions, not an automatic truth detector. It works alongside <a data-page-link href=\"critique--novelty-and-evidence\">evidence checks</a> and <a data-page-link href=\"practice--reindexing\">reindexing</a>. When a comparison changes the terms of the inquiry, write down the changed question. That small record is often a more durable result than the several pages of commentary that produced it.</p>",
+      "links": [
+        "extensions/multiple-models",
+        "critique/novelty-and-evidence",
+        "practice/reindexing"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"extensions--multiple-models\">Comparing different instruments</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a> <a data-page-link href=\"practice--reindexing\">Reindexing a question</a></nav>"
+    },
+    {
+      "id": "practice/reindexing",
+      "title": "Reindexing a question",
+      "href": "practice--reindexing",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 195,
+      "html": "<h1 id=\"reindexing-a-question\">Reindexing a question</h1>\n<p><strong>Reindexing</strong> changes the organizing coordinates of a question. A problem framed as “How can we increase use?” might become “Who finds entry difficult?” or “What use do our measures miss?” The object remains related, but the categories guiding attention change.</p>\n<p>A useful reindexing changes what counts as evidence or success. If a library measures only loans, a framing centered on time spent studying makes different activity visible. A shift toward accessibility may bring transport, communication, and opening hours into the inquiry.</p>\n<p>The source describes this operation as jumping between manifold regions. The observable act is a change in framing. We can inspect the old question, the new question, and the consequences without claiming to observe an internal geometric jump.</p>\n<p>Ask for three reframings, each naming one assumption it drops and one burden it creates. A new coordinate system may reveal one problem while obscuring another. <a data-page-link href=\"practice--lenses\">Lenses</a> and <a data-page-link href=\"practice--parallax\">parallax</a> help compare these tradeoffs.</p>\n<p>Reindexing can interrupt <a data-page-link href=\"critique--recursive-loops\">a recursive loop</a>. When successive answers elaborate the same framework without improving it, change the comparison or return to a concrete case. The purpose is to restore contact with the inquiry, not to keep novelty flowing indefinitely.</p>",
+      "links": [
+        "practice/lenses",
+        "practice/parallax",
+        "critique/recursive-loops"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--lenses\">Choosing a lens</a> <a data-page-link href=\"practice--parallax\">Parallax through comparison</a> <a data-page-link href=\"critique--recursive-loops\">When reflection becomes a loop</a></nav>"
+    },
+    {
+      "id": "practice/telescope-protocol",
+      "title": "A small telescope protocol",
+      "href": "practice--telescope-protocol",
+      "section": "practice",
+      "publishedDate": "2026-09-16",
+      "wordCount": 455,
+      "html": "<h1 id=\"a-small-telescope-protocol\">A small telescope protocol</h1>\n<p>The HLC telescope protocol turns an exploratory conversation into a sequence with an aim, a comparison, and an endpoint. Its central proposal is to identify familiar framings before asking for alternatives. The model’s tendency to produce recognizable language becomes material for a survey rather than merely a source of answers.</p>\n<h2 id=\"set-the-observation\">Set the observation</h2>\n<p>Choose a question narrow enough to inspect. “What makes a library accessible to shift workers?” is easier to evaluate than “What is the future of public knowledge?” State what sources you have, what kind of outcome you need, and what would count as a failure. This establishes an explicit <a data-page-link href=\"practice--epistemic-posture\">posture</a>.</p>\n<h2 id=\"survey-and-vary\">Survey and vary</h2>\n<ol><li>List several common framings of the question and their assumptions.</li><li>Compare the list with available sources or your own examples.</li><li>Select one assumption to vary, rather than rejecting every familiar idea.</li><li>Explore a boundary with a second domain or a different lens.</li><li>Describe a few candidate concepts in concise form.</li><li>Return to prose and test their meanings, examples, and limitations.</li></ol>\n<p>The <a data-page-link href=\"practice--exercises--attractor-survey\">attractor survey</a> and <a data-page-link href=\"practice--exercises--boundary-search\">boundary search</a> pages expand the middle steps. <a data-page-link href=\"formats--mandala\">Mandala format</a> can serve as an intermediate sketch when a dense field of associations is useful, but ordinary prose may be clearer for many tasks.</p>\n<h2 id=\"close-the-observation\">Close the observation</h2>\n<p>Select one result to keep, one to reject, and one unresolved question. Explain why. A retained concept should survive a plain-language definition and an example; a rejected one should leave a record of the failure rather than disappear into a polished narrative. This is <a data-page-link href=\"practice--exercises--integration\">integration</a>.</p>\n<p>The telescope analogy has a limit. The protocol is not a way to measure how rare a concept is inside a model, and the model cannot certify that an idea has never occurred before. It organizes exploration. Claims about novelty or the world still require the separate work described in <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a>.</p>\n<h2 id=\"decide-when-the-session-is-complete\">Decide when the session is complete</h2>\n<p>A small observation should have a small stopping rule. You might stop after comparing two lenses, after finding one usable distinction, or after identifying the source needed to resolve a disagreement. The limit keeps the protocol from rewarding continuation for its own sake.</p>\n<p>Before ending, ask which part of the result depends most heavily on an unverified assumption. If that assumption concerns a fact, identify the record that could check it. If it concerns a value, name the people or purposes among which a choice is being made. If it concerns a definition, try a counterexample. These are different kinds of unfinished work, and each deserves a different next step.</p>\n<p>A session that locates a precise uncertainty can be complete even when the uncertainty remains unresolved. Completion means the bounded inquiry produced an inspectable result, not that the subject has been exhausted.</p>",
+      "links": [
+        "practice/epistemic-posture",
+        "practice/exercises/attractor-survey",
+        "practice/exercises/boundary-search",
+        "formats/mandala",
+        "practice/exercises/integration",
+        "critique/novelty-and-evidence"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--epistemic-posture\">Epistemic posture</a> <a data-page-link href=\"practice--exercises--attractor-survey\">Exercise: survey the familiar answers</a> <a data-page-link href=\"practice--exercises--boundary-search\">Exercise: search a boundary</a> <a data-page-link href=\"formats--mandala\">Mandala as a compact format</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a></nav>"
+    },
+    {
+      "id": "sources",
+      "title": "Sources and editorial approach",
+      "href": "sources",
+      "section": "start",
+      "publishedDate": "2026-09-16",
+      "wordCount": 588,
+      "html": "<h1 id=\"sources-and-editorial-approach\">Sources and editorial approach</h1>\n<p>This is a 34-page explanatory blog authored for the Sitemap 0.3 demonstration on 16 September 2026. It adapts the user-requested local HLC corpus at <code>codex/projects/hlc</code> into a connected introduction. The original notes remain in their workspace; this folder is a new derived artifact, not a replacement, release, or authoritative edition of them.</p>\n<p>All body text here is newly written paraphrase or editorial explanation. The library examples and the compact exercises are illustrative adaptations, not reports of experiments performed for the original project. Machine provenance appears in an HTML comment at the start of every Markdown page. The <a data-page-link href=\"./\">home page</a> describes the intended reading experience, and <a data-page-link href=\"start--reading-paths\">reading paths</a> offer optional routes through the material.</p>\n<h2 id=\"main-conceptual-sources\">Main conceptual sources</h2>\n<p>Paths below are relative to the Hologram directory. They identify the local source records without exporting those records as part of the blog.</p>\n<ul><li><code>codex/projects/hlc/251113 holographic linguistic cosmography intro.md</code> introduces the cosmographic orientation and the distinction between cultural material, learned structure, and modes of access.</li><li><code>codex/projects/hlc/251113 holographic linguistic cosmography framework.md</code> organizes the substrate layers, epistemic relations, operators, and practice vocabulary.</li><li><code>codex/projects/hlc/251113 holographic linguistic cosmography glossary.md</code> supplies the principal terms, including cultural hologram, digital trace, corpus membrane, activation field, lenses, and integration.</li><li><code>codex/projects/hlc/251113 holographic linguistic cosmography non-recursion-centric.md</code> broadens the operator vocabulary beyond recursion and proposes speculative alternatives.</li><li><code>codex/projects/hlc/251114 hlc telescope protocol.md</code> supplies the sequence of survey, alternate directions, compact candidate generation, interpretation, and criticism, together with a discussion of its limits.</li></ul>\n<h2 id=\"sources-for-the-critical-and-extended-readings\">Sources for the critical and extended readings</h2>\n<ul><li><code>codex/projects/hlc/251113 llm epistemology.md</code> develops the ideological and interpersonal critique through an analysis of a quoted discussion. This blog adapts the local analysis; it does not independently verify the external thread or book discussed there.</li><li><code>codex/projects/hlc/251113 recursive ontology self-validating.md</code> examines recursion, self-confirming explanations, symbolic inflation, and the distinction between felt insight and ontological proof.</li><li><code>codex/projects/hlc/251114 spiralism misnavigation hlc.md</code> provides a critique of treating generated symbolic coherence as metaphysical authority. This guide retains the methodological issue without retelling its external reporting as verified fact.</li><li><code>codex/projects/hlc/251114 hlc capitalist realism.md</code> and <code>codex/projects/hlc/251114 hlc multiple manifolds.md</code> develop the questions of ideological attractors, corpus selection, and comparison across models.</li><li><code>codex/projects/hlc/251114 hlc technosolutionism itself.md</code> distinguishes conceptual inquiry from material political change and raises an internal critique of the method.</li><li><code>codex/projects/hlc/251121 hlc multimodal.md</code> proposes extensions to images, sound, other digitized representations, and speculative future cases.</li></ul>\n<p>The local <code>codex/projects/hlc/hypertext/SUMMARY.md</code> was used as a finding aid to the corpus. Its summaries were not treated as a substitute for the selected source passages or as governance over this derived blog.</p>\n<h2 id=\"what-this-edition-changes\">What this edition changes</h2>\n<p>The sources mix conceptual proposals, conversation, technical assertions, critical interpretation, and speculative synthesis. This guide preserves the central vocabulary while separating those registers. Claims that a prompt directly measures latent geometry, that a generated idea is unprecedented, or that a symbolic experience proves an ontology are presented as claims requiring evidence rather than as established results. The <a data-page-link href=\"critique--novelty-and-evidence\">evidence page</a> makes that editorial standard explicit.</p>\n<p>The astronomical and holographic terms are used as organizing metaphors unless a specific formal mechanism is supplied. The blog’s own graph represents authored hyperlinks between pages. It is not an empirical visualization of model internals. No external research, current product survey, or experimental validation is claimed for this adaptation.</p>",
+      "links": [
+        "home",
+        "start/reading-paths",
+        "critique/novelty-and-evidence"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-page-link href=\"./\">Home</a> <a data-page-link href=\"start--reading-paths\">Three ways through the field guide</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a></nav>"
+    },
+    {
+      "id": "start/reading-paths",
+      "title": "Three ways through the field guide",
+      "href": "start--reading-paths",
+      "section": "start",
+      "publishedDate": "2026-09-16",
+      "wordCount": 256,
+      "html": "<h1 id=\"three-ways-through-the-field-guide\">Three ways through the field guide</h1>\n<p>A linked guide can be read as a sequence or as a set of crossings. The routes below provide a starting order without turning the folder tree into a conceptual hierarchy. The same topic can belong to more than one route: evidence is part of creativity, and politics is part of how an instrument is built.</p>\n<h2 id=\"a-first-orientation\">A first orientation</h2>\n<p>Start with <a data-page-link href=\"start--what-is-hlc\">What is HLC?</a>, then move through the <a data-page-link href=\"foundations--cultural-hologram\">cultural hologram</a>, <a data-page-link href=\"foundations--digital-trace\">digital trace</a>, and <a data-page-link href=\"foundations--latent-manifold\">latent manifold</a>. Finish with the <a data-page-link href=\"foundations--activation-field\">activation field</a> to see why a generated answer depends on a particular interaction rather than simply exposing a stored world.</p>\n<h2 id=\"a-working-session\">A working session</h2>\n<p>Read <a data-page-link href=\"practice--epistemic-posture\">Epistemic posture</a> and the <a data-page-link href=\"practice--telescope-protocol\">telescope protocol</a>. Run the <a data-page-link href=\"practice--exercises--attractor-survey\">attractor survey</a> on a small topic, then try a <a data-page-link href=\"practice--exercises--boundary-search\">boundary search</a>. Close the session with <a data-page-link href=\"practice--exercises--integration\">integration</a>, even if the result is a useful rejection rather than a new concept.</p>\n<h2 id=\"a-critical-reading\">A critical reading</h2>\n<p>Begin with <a data-page-link href=\"critique--persona\">Persona and the feeling of an interlocutor</a>, then examine <a data-page-link href=\"critique--novelty-and-evidence\">novelty and evidence</a>, <a data-page-link href=\"critique--recursive-loops\">recursive loops</a>, and <a data-page-link href=\"critique--ideology-and-power\">ideology and power</a>. The question in <a data-page-link href=\"critique--technosolutionism\">Can a telescope become a solution?</a> brings these limits back to the purposes of the practice.</p>\n<p>You can also take one word as your entry point. “Attractor” connects a description of recurring output to a way of surveying assumptions. “Void” connects sparse records to the temptation to fill absence with fluent invention. “Integration” connects an exciting session to an artifact another person can examine. Follow the links that make your current question more precise, then return to <a data-page-link href=\"./\">the home page</a> when you want another route.</p>",
+      "links": [
+        "start/what-is-hlc",
+        "foundations/cultural-hologram",
+        "foundations/digital-trace",
+        "foundations/latent-manifold",
+        "foundations/activation-field",
+        "practice/epistemic-posture",
+        "practice/telescope-protocol",
+        "practice/exercises/attractor-survey",
+        "practice/exercises/boundary-search",
+        "practice/exercises/integration",
+        "critique/persona",
+        "critique/novelty-and-evidence",
+        "critique/recursive-loops",
+        "critique/ideology-and-power",
+        "critique/technosolutionism",
+        "home"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-page-link href=\"./\">Home</a> <a data-page-link href=\"start--what-is-hlc\">What is HLC?</a> <a data-page-link href=\"foundations--cultural-hologram\">The cultural hologram</a> <a data-page-link href=\"foundations--digital-trace\">The digital trace</a> <a data-page-link href=\"foundations--latent-manifold\">The latent manifold</a> <a data-page-link href=\"foundations--activation-field\">The activation field</a> <a data-page-link href=\"practice--epistemic-posture\">Epistemic posture</a> <a data-page-link href=\"practice--telescope-protocol\">A small telescope protocol</a> <a data-page-link href=\"practice--exercises--attractor-survey\">Exercise: survey the familiar answers</a> <a data-page-link href=\"practice--exercises--boundary-search\">Exercise: search a boundary</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a> <a data-page-link href=\"critique--persona\">Persona and the feeling of an interlocutor</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a> <a data-page-link href=\"critique--recursive-loops\">When reflection becomes a loop</a> <a data-page-link href=\"critique--ideology-and-power\">Ideology and the shape of what is easy to say</a> <a data-page-link href=\"critique--technosolutionism\">Can a telescope become a solution?</a></nav>"
+    },
+    {
+      "id": "start/what-is-hlc",
+      "title": "What is HLC?",
+      "href": "start--what-is-hlc",
+      "section": "start",
+      "publishedDate": "2026-09-16",
+      "wordCount": 269,
+      "html": "<h1 id=\"what-is-hlc\">What is HLC?</h1>\n<p>HLC stands for <strong>Holographic Linguistic Cosmography</strong>. The name gathers three ambitions: attending to distributed cultural patterns, working through language, and mapping a field of possible interpretations. In the source notes, a language model becomes an instrument for exploring a larger cultural landscape rather than only a conversational partner that supplies isolated answers.</p>\n<p>“Holographic” describes the proposal that fragments of culture carry relationships to much larger patterns. A sentence can imply an institution, a genre, a social role, and a history of assumptions. The word is doing conceptual work here; it does not establish that language models operate by optical holography or that every fragment contains recoverable access to the whole. That boundary matters throughout <a data-page-link href=\"foundations--language-and-reality\">the relation between language and reality</a>.</p>\n<p>“Linguistic” names the principal medium of the early project. The framework begins with a <a data-page-link href=\"foundations--cultural-hologram\">cultural hologram</a> wider than text, then asks what happens as cultural material becomes records, training data, and generated language. The later <a data-page-link href=\"extensions--multimodal\">multimodal extension</a> asks how the same questions change for images, sound, and other representations.</p>\n<p>“Cosmography” names an orientation toward mapping. Instead of accepting the first fluent answer, a practitioner compares framings, looks for recurring assumptions, and records relationships among concepts. The map is built from observed outputs and human interpretation. It is not a direct instrument readout of a model’s internal coordinates.</p>\n<p>A modest way to try HLC is to choose one question, ask for two explicitly different approaches, and compare what each makes easy or difficult to say. This is the beginning of <a data-page-link href=\"practice--parallax\">parallax</a>, and it already captures much of the practical value without requiring commitment to a comprehensive cosmology.</p>",
+      "links": [
+        "foundations/language-and-reality",
+        "foundations/cultural-hologram",
+        "extensions/multimodal",
+        "practice/parallax"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"foundations--language-and-reality\">Language and reality</a> <a data-page-link href=\"foundations--cultural-hologram\">The cultural hologram</a> <a data-page-link href=\"extensions--multimodal\">Beyond text</a> <a data-page-link href=\"practice--parallax\">Parallax through comparison</a></nav>"
+    },
+    {
+      "id": "terrain/attractors",
+      "title": "Attractors and familiar framings",
+      "href": "terrain--attractors",
+      "section": "terrain",
+      "publishedDate": "2026-09-16",
+      "wordCount": 256,
+      "html": "<h1 id=\"attractors-and-familiar-framings\">Attractors and familiar framings</h1>\n<p>An <strong>attractor</strong> in HLC is a recurring framing that responses tend to return to: a familiar explanation, moral pattern, genre, or set of assumptions. The image of a basin gives that recurrence a spatial form. Used carefully, it directs attention to observable habits in output; it does not by itself identify a dynamical system or an internal model mechanism.</p>\n<p>A question about improving an institution might repeatedly produce the language of efficiency, innovation, and measurement. Those ideas may be relevant. The HLC question is what happens when they become the default terms through which every problem is understood. Does a concern about belonging get translated into a metric before its meaning is examined?</p>\n<p>An <a data-page-link href=\"practice--exercises--attractor-survey\">attractor survey</a> makes such patterns explicit. It asks what each familiar framing enables, what it omits, and what evidence would support its use. The survey should include useful conventional answers as well as clichés. Familiarity is not a defect, and obscurity is not a virtue.</p>\n<p>The source corpus links some attractors to <a data-page-link href=\"critique--ideology-and-power\">ideology and power</a>. That is an invitation to investigate how records, institutions, and incentives shape what is easy to say. It should remain a situated analysis rather than a universal claim that every response expresses the same ideology in the same way.</p>\n<p>To move away from an attractor, change a stated assumption or introduce a relevant case that the framing handles poorly. This is more inspectable than asking for something “radically new.” <a data-page-link href=\"practice--reindexing\">Reindexing</a> gives a practical name to that change, while <a data-page-link href=\"critique--novelty-and-evidence\">evidence</a> keeps the alternative accountable.</p>",
+      "links": [
+        "practice/exercises/attractor-survey",
+        "critique/ideology-and-power",
+        "practice/reindexing",
+        "critique/novelty-and-evidence"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--exercises--attractor-survey\">Exercise: survey the familiar answers</a> <a data-page-link href=\"critique--ideology-and-power\">Ideology and the shape of what is easy to say</a> <a data-page-link href=\"practice--reindexing\">Reindexing a question</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a></nav>"
+    },
+    {
+      "id": "terrain/conceptual-exoplanets",
+      "title": "Conceptual exoplanets",
+      "href": "terrain--conceptual-exoplanets",
+      "section": "terrain",
+      "publishedDate": "2026-09-16",
+      "wordCount": 252,
+      "html": "<h1 id=\"conceptual-exoplanets\">Conceptual exoplanets</h1>\n<p>A <strong>conceptual exoplanet</strong> is HLC’s evocative name for an unfamiliar concept produced through exploration and then made stable enough to use. The source glossary gives the term an ambitious novelty claim. This guide uses it more cautiously for a candidate idea whose value and originality still need examination.</p>\n<p>A candidate should do work beyond sounding new. It might distinguish two situations previously grouped together, expose a hidden dependency, or suggest a testable design change. The phrase “access as maintenance,” developed in the <a data-page-link href=\"practice--exercises--boundary-search\">boundary exercise</a>, is modest enough to inspect: does treating access as ongoing care change what an institution notices or funds?</p>\n<p>The next step is comparison. Search your supplied sources and relevant existing vocabulary before claiming an invention. A concept may be new to the session while well established elsewhere. That does not make it worthless; it changes the claim from discovery to learning, adaptation, or useful recombination.</p>\n<p>Then attempt <a data-page-link href=\"practice--exercises--integration\">integration</a>. Write a definition, example, limitation, and possible use. Ask a reader who did not witness the conversation to explain the concept back. If it depends on an elaborate aura of shared excitement to make sense, it may not yet be stable.</p>\n<p>The astronomical name should remain an aid to attention. It can encourage a search for faint or overlooked connections, but it cannot certify rarity, originality, or truth. The companion page <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a> makes those standards explicit. An ordinary idea with a clear use can be a better result than an extraordinary name with no discriminating content.</p>",
+      "links": [
+        "practice/exercises/boundary-search",
+        "practice/exercises/integration",
+        "critique/novelty-and-evidence"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"practice--exercises--boundary-search\">Exercise: search a boundary</a> <a data-page-link href=\"practice--exercises--integration\">Integration: bring an idea back</a> <a data-page-link href=\"critique--novelty-and-evidence\">Novelty needs evidence</a></nav>"
+    },
+    {
+      "id": "terrain/voids",
+      "title": "Voids and missing records",
+      "href": "terrain--voids",
+      "section": "terrain",
+      "publishedDate": "2026-09-16",
+      "wordCount": 250,
+      "html": "<h1 id=\"voids-and-missing-records\">Voids and missing records</h1>\n<p>HLC uses <strong>voids</strong>, <strong>dark linguistic matter</strong>, and related astronomical images for what is absent, sparse, or difficult to reconstruct from cultural records. The terms point toward a central asymmetry: a model can produce language about a subject even when the evidentiary basis for that subject is thin. Fluency does not reveal the size or character of the gap.</p>\n<p>Different absences need different responses. A digitized document may be missing from the current context. A practice may be documented only through outsiders’ accounts. A historical event may have left fragmentary records. A bodily skill may be poorly conveyed in words. Grouping these together as one void can hide the different work each requires.</p>\n<p>The <a data-page-link href=\"foundations--digital-trace\">digital trace</a> explains why the model’s available representations are narrower than the <a data-page-link href=\"foundations--cultural-hologram\">cultural field</a>. The <a data-page-link href=\"foundations--corpus-membrane\">corpus membrane</a> adds another limit: even an existing record may not be part of a particular model’s learned material or accessible context.</p>\n<p>A useful practice is to name the missing input. Do you need a primary document, a practitioner’s demonstration, a community account, an observation, or a more precise question? Naming the absence creates a route toward inquiry. Asking the model to invent a confident completion conceals the route.</p>\n<p>The source’s cosmographic language can make unexplored regions sound like territories waiting to be claimed. A more careful reading recognizes that some knowledge belongs to people and practices with their own terms of access. <a data-page-link href=\"critique--ideology-and-power\">Power</a> includes who records, who interprets, and who is entitled to make a representation public.</p>",
+      "links": [
+        "foundations/digital-trace",
+        "foundations/cultural-hologram",
+        "foundations/corpus-membrane",
+        "critique/ideology-and-power"
+      ],
+      "footer": "<nav class=\"page-end\" aria-label=\"Page links\"><a data-jump=\"home\" href=\"./\">Home</a> <a data-page-link href=\"foundations--digital-trace\">The digital trace</a> <a data-page-link href=\"foundations--cultural-hologram\">The cultural hologram</a> <a data-page-link href=\"foundations--corpus-membrane\">The corpus membrane</a> <a data-page-link href=\"critique--ideology-and-power\">Ideology and the shape of what is easy to say</a></nav>"
+    }
+  ]
+}
