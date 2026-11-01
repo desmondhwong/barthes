@@ -1,6 +1,6 @@
-// hx generated 261101 — public Are.na adapter for the approved Barthes first pass.
-// Only this fixed public channel is queried. Graph edges come from parsed links,
-// never channel membership. Credentials and untrusted source HTML are not used.
+// hx generated 261101 — public Are.na content with source-scoped routes and identities.
+// Graph edges come from parsed links, never channel membership. Public visibility
+// is checked before cached contents are read. Credentials/source HTML are not used.
 import MarkdownIt from "markdown-it";
 import type { Corpus, CorpusStatus, ReaderPage } from "../types";
 import { arenaHref, escapeHTML, headingId, normalizeDate, visibleWordCount } from "./shared";
@@ -38,6 +38,12 @@ type ArenaFetch = (url: string, init: RequestInit & { next: { revalidate: number
 export interface ArenaOptions {
   pageLimit?: number;
   channelId?: string;
+  siteSlug?: string;
+  title?: string;
+  basePath?: string;
+  sourceUrl?: string;
+  /** Public nets use the resolved numeric channel ID for routes and persistence. */
+  publicNet?: boolean;
   /** Injectable only for deterministic adapter tests; routes use the default. */
   fetcher?: ArenaFetch;
   timeoutMs?: number;
@@ -52,12 +58,29 @@ function stableId(value: unknown): string | null {
   return /^[1-9]\d{0,18}$/.test(id) ? id : null;
 }
 
+export function validArenaChannel(value: string): boolean {
+  return /^[a-z0-9][a-z0-9-]{0,99}$/.test(value);
+}
+
+type ArenaPresentation = Pick<ArenaOptions, "siteSlug" | "title" | "basePath" | "sourceUrl" | "channelId">;
+
+function presentation(options: ArenaPresentation = {}) {
+  const siteSlug = options.siteSlug ?? "barthes-test";
+  const basePath = options.basePath ?? `/s/${siteSlug}`;
+  if (!(validArenaChannel(siteSlug) || /^arena:[a-z0-9-]{1,100}$/.test(siteSlug)) || !/^\/(?:s|n)\/[a-z0-9][a-z0-9-]{0,99}$/.test(basePath)) throw new Error("Invalid Are.na reader route.");
+  const source = options.sourceUrl ?? ARENA_CHANNEL_URL;
+  const url = new URL(source);
+  if (url.protocol !== "https:" || !["are.na", "www.are.na"].includes(url.hostname) || url.username || url.password || url.port) throw new Error("Invalid Are.na source URL.");
+  const title = (options.title ?? "Barthes test").replace(/[\u0000-\u001f\u007f]/g, " ").trim().slice(0, 300) || "Are.na channel";
+  return {siteSlug, basePath, title, sourceUrl:url.href, channelId:options.channelId ?? ARENA_CHANNEL};
+}
+
 export function normalizePageLimit(value: unknown): number {
   return typeof value === "number" && Number.isFinite(value) ? Math.max(1, Math.min(ARENA_MAX_PAGES, Math.floor(value))) : 1;
 }
 
-function pageHref(id: string, requestedPages: number): string {
-  return arenaHref(id) + (requestedPages > 1 ? `?pages=${requestedPages}` : "");
+function pageHref(id: string, requestedPages: number, basePath: string): string {
+  return arenaHref(id, basePath) + (requestedPages > 1 ? `?pages=${requestedPages}` : "");
 }
 
 function sourceUrl(entry: ArenaEntry): string {
@@ -137,7 +160,8 @@ export function renderArenaMarkdown(markdown: string, page: { id: string; title:
   return {html, links:[...links]};
 }
 
-export function corpusFromArenaEntries(entries: ArenaEntry[], requestedPages = 1): Corpus {
+export function corpusFromArenaEntries(entries: ArenaEntry[], requestedPages = 1, options: ArenaPresentation = {}): Corpus {
+  const display = presentation(options);
   const limit = normalizePageLimit(requestedPages), unique = new Map<string, ArenaEntry>();
   const externalItems: NonNullable<NonNullable<Corpus["source"]>["externalItems"]> = [];
   for (const entry of entries) {
@@ -147,7 +171,7 @@ export function corpusFromArenaEntries(entries: ArenaEntry[], requestedPages = 1
       if (!externalItems.some((item) => item.id === id)) externalItems.push({id, title:titleFor(entry), type:"Channel", url:sourceUrl(entry)});
     } else if (!unique.has(id)) unique.set(id, entry);
   }
-  const included = new Map([...unique.keys()].map((id) => [id, pageHref(id, limit)]));
+  const included = new Map([...unique.keys()].map((id) => [id, pageHref(id, limit, display.basePath)]));
   const pages: ReaderPage[] = [];
   let unsupportedCount = externalItems.length;
   for (const [id, entry] of unique) {
@@ -160,7 +184,7 @@ export function corpusFromArenaEntries(entries: ArenaEntry[], requestedPages = 1
       html = `<h1 id="${escapeHTML(headingId(title) || "page")}">${escapeHTML(title)}</h1>\n<p>This ${escapeHTML(entry.type.toLowerCase())} block is available on Are.na.</p>\n<p><a href="${escapeHTML(sourceUrl(entry))}" rel="noopener noreferrer">Open source on Are.na</a></p>`;
       links = [];
     }
-    pages.push({id, title, href, section:"arena", publishedDate:normalizeDate(typeof entry.created_at === "string" ? entry.created_at.slice(0, 10) : null), wordCount:visibleWordCount(html), html, links, footer:""});
+    pages.push({id, title, href, section:"Are.na", publishedDate:normalizeDate(typeof entry.created_at === "string" ? entry.created_at.slice(0, 10) : null), wordCount:visibleWordCount(html), html, links, footer:""});
   }
   const homeId = pages[0]?.id || "";
   const byId = new Map(pages.map((page) => [page.id, page]));
@@ -172,7 +196,7 @@ export function corpusFromArenaEntries(entries: ArenaEntry[], requestedPages = 1
     anchors.push(`<a href="https://www.are.na/block/${page.id}" rel="noopener noreferrer">Source on Are.na</a>`);
     page.footer = `<nav class="page-end" aria-label="Page links">${anchors.join(" ")}</nav>`;
   }
-  return {version:3, title:"Barthes test", siteSlug:"barthes-test", homeId, pages, status:{kind:pages.length ? "ready" : "empty"}, source:{kind:"arena", url:ARENA_CHANNEL_URL, channelId:ARENA_CHANNEL, unsupportedCount, externalItems, cacheSeconds:ARENA_CACHE_SECONDS}};
+  return {version:3, title:display.title, siteSlug:display.siteSlug, basePath:display.basePath, homeId, pages, status:{kind:pages.length ? "ready" : "empty"}, source:{kind:"arena", url:display.sourceUrl, channelId:display.channelId, unsupportedCount, externalItems, cacheSeconds:ARENA_CACHE_SECONDS}};
 }
 
 function readMeta(value: unknown, expectedPage: number): ArenaMeta {
@@ -189,34 +213,81 @@ function retryAfter(response: Response): number | undefined {
   return Number.isFinite(seconds) ? Math.min(3600, Math.max(1, seconds)) : undefined;
 }
 
-export async function getArenaCorpus({pageLimit, channelId = ARENA_CHANNEL, fetcher = fetch, timeoutMs = 10_000}: ArenaOptions = {}): Promise<Corpus> {
-  if (!/^[a-z0-9][a-z0-9-]{0,99}$/.test(channelId)) throw new Error("Invalid public Are.na channel identifier.");
-  const apiRoot = `https://api.are.na/v3/channels/${encodeURIComponent(channelId)}/contents`;
+function readFailure(error: unknown): ArenaReadError {
+  if (error instanceof ArenaReadError) return error;
+  const timeout = error instanceof Error && ["TimeoutError", "AbortError"].includes(error.name);
+  return new ArenaReadError(timeout ? "timeout" : "unavailable", timeout ? "Are.na took too long to respond. Try again later." : "Are.na could not be reached. Try again later.");
+}
+
+async function readPublicJSON(url: string, channelId: string, fetcher: ArenaFetch, timeoutMs: number, metadata = false): Promise<unknown> {
+  const response = await fetcher(url, {
+    headers:{Accept:"application/json"}, credentials:"omit", redirect:"error",
+    signal:AbortSignal.timeout(timeoutMs), ...(metadata ? {cache:"no-store" as const} : {}),
+    next:{revalidate:metadata ? 0 : ARENA_CACHE_SECONDS, tags:[`arena:${channelId}`]},
+  });
+  if (response.status === 429) throw new ArenaReadError("rate-limited", "Are.na is rate limiting this channel. Try again after the wait shown.", retryAfter(response));
+  if (!response.ok) throw new ArenaReadError("unavailable", [401,403,404].includes(response.status) ? "This Are.na channel is unavailable or is no longer public." : "Are.na could not load this channel. Try again later.");
+  if (Number(response.headers.get("content-length") || 0) > MAX_RESPONSE_BYTES) throw new ArenaReadError("invalid-response", "The Are.na response exceeds the reader's size limit.");
+  const text = await response.text();
+  if (Buffer.byteLength(text) > MAX_RESPONSE_BYTES) throw new ArenaReadError("invalid-response", "The Are.na response exceeds the reader's size limit.");
+  try { return JSON.parse(text); } catch { throw new ArenaReadError("invalid-response", "Are.na returned an unreadable response."); }
+}
+
+function publicChannel(value: unknown): {id: string; title: string; url: string} {
+  if (!value || typeof value !== "object" || Array.isArray(value)) throw new ArenaReadError("invalid-response", "Are.na returned invalid channel metadata.");
+  const channel = value as Record<string, unknown>, id = stableId(channel.id);
+  // Closed channels are publicly readable; only their contributions are restricted.
+  if (channel.visibility === "private" || channel.state === "deleted") throw new ArenaReadError("unavailable", "This Are.na channel is unavailable or is no longer public.");
+  if (!id || channel.type !== "Channel" || channel.state !== "available" || !["public", "closed"].includes(String(channel.visibility)) || typeof channel.title !== "string") throw new ArenaReadError("invalid-response", "Are.na returned invalid channel metadata.");
+  const owner = channel.owner as {slug?: unknown} | undefined;
+  const ownerSlug = typeof owner?.slug === "string" ? owner.slug : null;
+  const url = typeof channel.slug === "string" && ownerSlug && validArenaChannel(channel.slug) && validArenaChannel(ownerSlug)
+    ? `https://www.are.na/${ownerSlug}/${channel.slug}` : `https://www.are.na/channel/${id}`;
+  return {id, title:channel.title, url};
+}
+
+export async function getArenaCorpus(options: ArenaOptions = {}): Promise<Corpus> {
+  const {pageLimit, channelId = ARENA_CHANNEL, fetcher = fetch, timeoutMs = 10_000} = options;
+  if (!validArenaChannel(channelId)) throw new Error("Invalid public Are.na channel identifier.");
+  // Validate configured presentation before initiating any remote request.
+  presentation(options);
   const requestedPages = normalizePageLimit(pageLimit), entries: ArenaEntry[] = [];
+  let channel: ReturnType<typeof publicChannel>;
+  try {
+    channel = publicChannel(await readPublicJSON(`https://api.are.na/v3/channels/${encodeURIComponent(channelId)}`, channelId, fetcher, timeoutMs, true));
+    if (stableId(channelId) && channel.id !== channelId) throw new ArenaReadError("invalid-response", "Are.na returned a different channel than requested.");
+  } catch (error) {
+    const failure = readFailure(error);
+    const corpus = corpusFromArenaEntries([], requestedPages, {
+      ...options, title:options.title ?? "Are.na channel", sourceUrl:options.sourceUrl ?? `https://www.are.na/channel/${channelId}`,
+      ...(options.publicNet ? {siteSlug:`arena:${channelId}`, basePath:`/n/${channelId}`} : {}),
+    });
+    corpus.status = {kind:"error", code:failure.code, message:failure.message, ...(failure.retryAfterSeconds ? {retryAfterSeconds:failure.retryAfterSeconds} : {})};
+    corpus.source = {...corpus.source!, pagesLoaded:0, requestedPages, hasMore:false, pageLimit:ARENA_MAX_PAGES};
+    return corpus;
+  }
+  const display: ArenaPresentation = {
+    ...options, channelId:channel.id, title:options.title ?? channel.title, sourceUrl:options.sourceUrl ?? channel.url,
+    ...(options.publicNet ? {siteSlug:`arena:${channel.id}`, basePath:`/n/${channel.id}`} : {}),
+  };
+  const apiRoot = `https://api.are.na/v3/channels/${channel.id}/contents`;
   let pagesLoaded = 0, meta: ArenaMeta | undefined, failure: ArenaReadError | undefined;
   for (let page = 1; page <= requestedPages; page++) {
     try {
-      const response = await fetcher(`${apiRoot}?page=${page}&per=${ARENA_PAGE_SIZE}&sort=position_asc`, {headers:{Accept:"application/json"}, signal:AbortSignal.timeout(timeoutMs), next:{revalidate:ARENA_CACHE_SECONDS, tags:[`arena:${channelId}`]}});
-      if (response.status === 429) throw new ArenaReadError("rate-limited", "Are.na is rate limiting this channel. Try again after the wait shown.", retryAfter(response));
-      if (!response.ok) throw new ArenaReadError("unavailable", response.status === 404 || response.status === 403 ? "This Are.na channel is unavailable or is no longer public." : "Are.na could not load this channel. Try again later.");
-      if (Number(response.headers.get("content-length") || 0) > MAX_RESPONSE_BYTES) throw new ArenaReadError("invalid-response", "The Are.na response exceeds the reader's size limit.");
-      const text = await response.text();
-      if (Buffer.byteLength(text) > MAX_RESPONSE_BYTES) throw new ArenaReadError("invalid-response", "The Are.na response exceeds the reader's size limit.");
-      let payload: {data?: unknown; meta?: unknown};
-      try { payload = JSON.parse(text); } catch { throw new ArenaReadError("invalid-response", "Are.na returned an unreadable response."); }
+      const payload = await readPublicJSON(`${apiRoot}?page=${page}&per=${ARENA_PAGE_SIZE}&sort=position_asc`, channel.id, fetcher, timeoutMs) as {data?: unknown; meta?: unknown};
       if (!payload || !Array.isArray(payload.data) || payload.data.length > ARENA_PAGE_SIZE || payload.data.some((entry) => !entry || typeof entry !== "object" || !stableId(entry.id) || typeof entry.type !== "string")) throw new ArenaReadError("invalid-response", "Are.na returned invalid channel content.");
       meta = readMeta(payload.meta, page);
       entries.push(...payload.data as ArenaEntry[]);
       pagesLoaded = page;
       if (!meta.has_more_pages) break;
     } catch (error) {
-      failure = error instanceof ArenaReadError ? error : new ArenaReadError(error instanceof Error && ["TimeoutError", "AbortError"].includes(error.name) ? "timeout" : "unavailable", error instanceof Error && ["TimeoutError", "AbortError"].includes(error.name) ? "Are.na took too long to respond. Try again later." : "Are.na could not be reached. Try again later.");
+      failure = readFailure(error);
       break;
     }
   }
-  const corpus = corpusFromArenaEntries(entries, requestedPages);
+  const corpus = corpusFromArenaEntries(entries, requestedPages, display);
   const hasMore = failure ? true : meta?.has_more_pages || false;
-  corpus.source = {...corpus.source!, channelId, pagesLoaded, requestedPages, totalPages:meta?.total_pages, totalCount:meta?.total_count, hasMore, nextPage:hasMore ? pagesLoaded + 1 : null, pageLimit:ARENA_MAX_PAGES};
+  corpus.source = {...corpus.source!, pagesLoaded, requestedPages, totalPages:meta?.total_pages, totalCount:meta?.total_count, hasMore, nextPage:hasMore ? pagesLoaded + 1 : null, pageLimit:ARENA_MAX_PAGES};
   if (failure) corpus.status = {kind:pagesLoaded ? "partial" : "error", code:failure.code, message:failure.message, ...(failure.retryAfterSeconds ? {retryAfterSeconds:failure.retryAfterSeconds} : {})};
   else if (hasMore) corpus.status = {kind:"partial", message:`Showing ${pagesLoaded} of ${meta!.total_pages} source pages. Load more to discover additional pages and links.${pagesLoaded === ARENA_MAX_PAGES ? " This preview loads at most 10 source pages." : ""}`};
   else if (!corpus.pages.length) corpus.status = {kind:"empty", message:"This channel has no readable blocks. Nested channels remain external source links."};

@@ -12,4 +12,4 @@ export function normalizeDate(value: unknown): string | null {
 export const visibleWordCount = (html: string): number => html.replace(/<[^>]*>/g, " ").replace(/&(?:amp|lt|gt|quot|apos|#39);/g, (entity) => ({ "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"', "&apos;": "'", "&#39;": "'" })[entity]!).match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu)?.length || 0;
 
 export const hlcHref = (id: string): string => id === "home" ? "/s/hlc" : `/s/hlc/p/${id.replaceAll("/", "--")}`;
-export const arenaHref = (id: string): string => `/s/barthes-test/p/${id}`;
+export const arenaHref = (id: string, basePath = "/s/barthes-test"): string => `${basePath}/p/${id}`;

@@ -22,6 +22,8 @@ export interface Corpus {
   version: 3;
   title: string;
   siteSlug: string;
+  /** Actual reader entry route; identity remains independent of this URL. */
+  basePath?: string;
   homeId: string;
   pages: ReaderPage[];
   status?: CorpusStatus;

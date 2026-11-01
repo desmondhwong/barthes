@@ -1,0 +1,10 @@
+{
+  "id": "barthes",
+  "name": "Barthes",
+  "version": "0.2.0",
+  "minAppVersion": "1.11.4",
+  "description": "Review and publish selected notes to Are.na, then explore them in Barthes.",
+  "author": "desmond",
+  "authorUrl": "https://github.com/desmondhwong/barthes",
+  "isDesktopOnly": true
+}

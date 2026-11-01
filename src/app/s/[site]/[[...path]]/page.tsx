@@ -17,20 +17,22 @@ type Props = {
 };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { site } = await params;
-  return { title: site === 'hlc' ? 'HLC field notes' : 'Barthes test' };
+  const config = await getSiteConfiguration(site);
+  return { title: config?.site.title ?? 'Barthes' };
 }
 export default async function SitePage({ params, searchParams }: Props) {
   const { site, path = [] } = await params;
-  if (site !== 'hlc' && site !== 'barthes-test') notFound();
   const config = await getSiteConfiguration(site);
   if (!config) notFound();
   const query = await searchParams;
   const pageLimit = requestedPageLimit(query.pages);
-  const source = config.sources.find(item => item.kind === (site === 'hlc' ? 'markdown' : 'arena'));
+  const source = config.sources.find(item => item.kind === 'arena' || (site === 'hlc' && item.kind === 'markdown'));
   if (!source) {
     return <main className="fallback"><h1>{config.site.title}</h1><p>This site has no public source configured.</p><a href="/s/hlc">HLC field notes</a></main>;
   }
-  const loaded = site === 'hlc' ? await getHlcCorpus() : await getArenaCorpus({ pageLimit, channelId: source.source_ref });
+  const loaded = source.kind === 'markdown' ? await getHlcCorpus() : await getArenaCorpus({
+    pageLimit, channelId: source.source_ref, siteSlug:site, title:config.site.title, basePath:`/s/${site}`,
+  });
   const corpus = applyPageMappings(loaded, config, source.id);
   const route = resolveReaderRoute(path, corpus, config, source.id, requestQuery(query));
   if (route.kind === 'not-found') notFound();
@@ -48,7 +50,7 @@ export default async function SitePage({ params, searchParams }: Props) {
         ? 'This preview has reached its limit of 10 source pages. Open Are.na to continue.'
         : "This channel has more content. Load the next batch to resolve this page's membership."}</p>
       {(action.kind === 'load-more' || action.kind === 'retry') && <a href={requestQuery({ ...query, pages: String(action.pages) })}>{action.kind === 'retry' ? 'Retry load' : 'Load more'}</a>}
-      {links}<p><a href="/s/barthes-test">Channel index</a></p>
+      {links}<p><a href={`/s/${site}`}>Channel index</a></p>
     </main>;
   }
   return <Reader corpus={corpus} initialPageId={route.pageId} />;

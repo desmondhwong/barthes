@@ -1,0 +1,244 @@
+{
+  "schema": "barthes-verification-1",
+  "slice": "Obsidian publishing and public nets",
+  "status": "local implementation verified; live account connection and publication observed; Preview delivery pending",
+  "date": "2026-11-01",
+  "automated": {
+    "tests": 159,
+    "passed": 159,
+    "failed": 0,
+    "syncTests": 28,
+    "controllerTests": 6,
+    "typecheck": "passed",
+    "nextBuild": "passed",
+    "obsidianBundle": "passed"
+  },
+  "browser": {
+    "hlc": {
+      "ok": true,
+      "initialReaderMs": 282,
+      "elapsedMs": 6246,
+      "checks": [
+        {
+          "name": "fresh HLC reader: 34 pages, one current reading surface",
+          "status": "passed",
+          "ms": 1348
+        },
+        {
+          "name": "authored link adds one history entry; Back/Forward preserves branch",
+          "status": "passed",
+          "ms": 82
+        },
+        {
+          "name": "breadcrumb return preserves future; new hyperlink replaces that branch",
+          "status": "passed",
+          "ms": 977
+        },
+        {
+          "name": "G toggles graph/read without adding history or changing URL",
+          "status": "passed",
+          "ms": 174
+        },
+        {
+          "name": "Index jump visits a page without inventing a traveled edge",
+          "status": "passed",
+          "ms": 104
+        },
+        {
+          "name": "theme, reduced frame, saved view and Zen recovery",
+          "status": "passed",
+          "ms": 284
+        },
+        {
+          "name": "graph filters preserve recoverable empty state and local-neighbor view",
+          "status": "passed",
+          "ms": 287
+        },
+        {
+          "name": "title/date/path/shuffle arrangements and keyboard density control",
+          "status": "passed",
+          "ms": 169
+        },
+        {
+          "name": "held zoom stops after pointer release",
+          "status": "passed",
+          "ms": 1971
+        },
+        {
+          "name": "reduced motion supports immediate graph/read recovery",
+          "status": "passed",
+          "ms": 71
+        },
+        {
+          "name": "mobile Arrange panel and hidden-bar reveal remain usable",
+          "status": "passed",
+          "ms": 779
+        }
+      ]
+    },
+    "panel": [
+      {
+        "name": "Whole-vault publication requires an explicit source choice",
+        "result": "pass"
+      },
+      {
+        "name": "Adding a net passes only the explicit source and destination",
+        "result": "pass"
+      },
+      {
+        "name": "Selecting an existing channel preserves its identity",
+        "result": "pass"
+      },
+      {
+        "name": "Model refresh preserves draft, focus and text selection",
+        "result": "pass"
+      },
+      {
+        "name": "Review renders source markup as inert text",
+        "result": "pass"
+      },
+      {
+        "name": "Conflict resolution specifies the exact note and chosen version",
+        "result": "pass"
+      },
+      {
+        "name": "Publish acts on the displayed net review",
+        "result": "pass"
+      },
+      {
+        "name": "Export remains reachable",
+        "result": "pass"
+      },
+      {
+        "name": "Import passes the chosen file to validation",
+        "result": "pass"
+      },
+      {
+        "name": "Blockers disable publish and pull",
+        "result": "pass"
+      },
+      {
+        "name": "Paused net prevents writes including conflict resolution",
+        "result": "pass"
+      },
+      {
+        "name": "Automatic sync requires a selected publishing device",
+        "result": "pass"
+      },
+      {
+        "name": "Automatic sync requires an initial reviewed publication",
+        "result": "pass"
+      },
+      {
+        "name": "A source conflict exposes repair and prevents resume",
+        "result": "pass"
+      },
+      {
+        "name": "Source repair requires an explicit folder choice",
+        "result": "pass"
+      },
+      {
+        "name": "Source repair passes only the chosen net and folder",
+        "result": "pass"
+      },
+      {
+        "name": "desktop: no horizontal overflow",
+        "result": "pass"
+      },
+      {
+        "name": "desktop: bottom controls remain reachable",
+        "result": "pass"
+      },
+      {
+        "name": "narrow: no horizontal overflow",
+        "result": "pass"
+      },
+      {
+        "name": "narrow: bottom controls remain reachable",
+        "result": "pass"
+      },
+      {
+        "name": "short-dark: no horizontal overflow",
+        "result": "pass"
+      },
+      {
+        "name": "short-dark: bottom controls remain reachable",
+        "result": "pass"
+      },
+      {
+        "name": "enlarged-dark: no horizontal overflow",
+        "result": "pass"
+      },
+      {
+        "name": "enlarged-dark: bottom controls remain reachable",
+        "result": "pass"
+      },
+      {
+        "name": "Keyboard advances through ordinary controls",
+        "result": "pass"
+      },
+      {
+        "name": "Disconnected state offers connection and prevents publication",
+        "result": "pass"
+      }
+    ],
+    "publicNet": {
+      "count": 2,
+      "target": "http://127.0.0.1:3011/n/5946473/p/52203995",
+      "restored": "52203993",
+      "scoped": true
+    },
+    "noJavaScript": {
+      "initialReadable": true,
+      "linked": true,
+      "body": true
+    }
+  },
+  "nativeObsidian": {
+    "vault": "barthes",
+    "plugin": "barthes",
+    "version": "0.2.0",
+    "installed": true,
+    "enabled": true,
+    "commands": "verified through Obsidian MCP and native CLI",
+    "renderedPanel": "inspected native screenshot",
+    "console": "No errors captured",
+    "fixtures": [
+      "net-a/First.md",
+      "net-a/Second.md",
+      "net-b/Independent.md"
+    ],
+    "existingNotes": "four original notes preserved"
+  },
+  "oauth": {
+    "applicationId": "5907",
+    "redirectUri": "obsidian://barthes-auth",
+    "registration": "created",
+    "authorization": "completed by the user in the installed plugin; connected state verified",
+    "tokenExchange": "successful user flow confirmed by authenticated plugin state; credential never printed",
+    "livePublication": "user published three notes and edited an existing block; saved mappings verified",
+    "priorAgentAttempt": "automatic approval review rejected agent-submitted consent before the user's successful connection",
+    "publishedNet": {"channelId": "5949370", "title": "net aleph-1", "sourceFolder": "net-a", "blockIds": ["52228640", "52228641", "52228756"]}
+  },
+  "limitations": [
+    "Live pull/conflict round trips remain unverified; publication/update success is user-observed with current mappings inspected.",
+    "Desktop development plugin; no community-directory release.",
+    "Text-only publishing; attachments, embeds and unsupported links block publication.",
+    "Pull handles mapped notes, not importing newly created remote blocks.",
+    "Are.na updates lack documented CAS; concurrent edit between reread and write can still race.",
+    "Publication creates temporary placeholder blocks; multi-request updates are not atomic.",
+    "Single chosen automatic publisher is a local device safeguard, not a distributed lease.",
+    "Physical-device, additional-vault and large-channel checks unobserved."
+  ],
+  "sourceBase": "19ca916e5fdffa2d828737bb20f9e5f8f2a866d8",
+  "delivery": {
+    "branch": "feat/first-pass",
+    "newCommit": null,
+    "signing": "failed: 1Password: failed to fill whole buffer",
+    "push": "not performed",
+    "preview": "not created for this slice",
+    "priorPreview": "https://barthes-iv2vy7815-desmondhwong.vercel.app",
+    "localReader": "http://127.0.0.1:3011/n/5946473",
+    "pluginInstall": "Verified generated files in the barthes test vault; enabled with native commands and panel checked."
+  }
+}

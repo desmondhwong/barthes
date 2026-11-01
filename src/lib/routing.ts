@@ -103,6 +103,16 @@ export type ReaderRoute =
   | { kind: "empty" }
   | { kind: "not-found" };
 
+/** Public nets need no database seed. A valid unloaded block keeps its membership
+ * unresolved until pagination completes; arbitrary paths never become pages. */
+export function resolvePublicNetRoute(path: readonly string[], corpus: Corpus): ReaderRoute {
+  if (!path.length) return corpus.pages.length ? {kind:"page", pageId:corpus.homeId} : {kind:"empty"};
+  if (path.length !== 2 || path[0] !== "p" || !/^[1-9]\d{0,18}$/.test(path[1])) return {kind:"not-found"};
+  if (corpus.pages.some(page => page.id === path[1])) return {kind:"page", pageId:path[1]};
+  if (corpus.status?.kind === "error") return {kind:"empty"};
+  return corpus.source?.hasMore ? {kind:"unloaded", sourcePageId:path[1]} : {kind:"not-found"};
+}
+
 export function resolveReaderRoute(
   path: readonly string[], corpus: Corpus, config: SiteConfiguration, sourceId: string,
   query = "",

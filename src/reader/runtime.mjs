@@ -126,6 +126,9 @@ export function mountReader(host, corpus, initialPageId) {
     if(key!==simulationIds){simulation.stop();simulation=G.createSimulation(active,{density:preferences.density});simulation.stop();simulationIds=key;}
   }
   function syncPath(reveal=true){
+    // Pagination reloads the current page even after client navigation, including
+    // ordinary new-tab actions that do not pass through our click handler.
+    for(const link of host.querySelectorAll('[data-reader-reload]')){const url=new URL(link.href,location.href);url.pathname=new URL(pageHref(G.PAGES[current]),location.href).pathname;link.href=url.pathname+url.search;}
     const oldLeft=pathViewport.scrollLeft;$('path-chain').replaceChildren();
     route.items.forEach((id,i)=>{const sep=document.createElement('span');sep.className='path-separator';sep.textContent='•';sep.setAttribute('aria-hidden','true');const a=document.createElement('a');a.href=pageHref(G.PAGES[id]);a.dataset.pathIndex=String(i);a.className='path-link';a.draggable=false;a.textContent=G.PAGES[id].title;if(route.cursor===i)a.setAttribute('aria-current','page');$('path-chain').append(sep,a);});
     $('home-link').dataset.pathIndex='-1';if(route.cursor===-1)$('home-link').setAttribute('aria-current','page');else $('home-link').removeAttribute('aria-current');
@@ -309,7 +312,7 @@ export function mountReader(host, corpus, initialPageId) {
   function applyPreferences(){simulation.setDensity(preferences.density);syncFrame();if(reducedMotion.matches)settle();preferences.mapOpen?showGraph():showPage();}
   $('restore-view').onclick=()=>{if(profile){preferences={...profile.preferences};applyPreferences();announce('Saved view restored.');}};
   $('reset-view').onclick=()=>{preferences=W.defaultPreferences();applyPreferences();announce('View reset. Exploration and path kept.');};
-  $('export-map').onclick=()=>{try{save();const snapshot=W.createSnapshot(state,current,preferences,profile,route),url=createObjectURL(new Blob([JSON.stringify(snapshot,null,2)+'\n'],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`barthes-${C.siteSlug}-exploration.json`;document.body.append(a);a.click();a.remove();schedule(()=>revokeObjectURL(url),1000);announce('Export prepared. Your browser handles the download.');}catch(e){announce(`Export failed: ${e.message}`,true);}};
+  $('export-map').onclick=()=>{try{save();const snapshot=W.createSnapshot(state,current,preferences,profile,route),url=createObjectURL(new Blob([JSON.stringify(snapshot,null,2)+'\n'],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`barthes-${C.siteSlug.replace(/[^a-z0-9-]/gi,'-')}-exploration.json`;document.body.append(a);a.click();a.remove();schedule(()=>revokeObjectURL(url),1000);announce('Export prepared. Your browser handles the download.');}catch(e){announce(`Export failed: ${e.message}`,true);}};
   $('import-map').onclick=()=>{if(!importing)$('import-file').click();};
   listen($('import-file'),'change',async e=>{
     const file=e.target.files?.[0];e.target.value='';if(!file||importing)return;const epoch=++importEpoch;importing=true;$('import-map').disabled=true;

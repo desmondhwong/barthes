@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Corpus } from "../lib/types";
+import { paginationAction } from "../lib/routing";
 import { mountReader } from "./runtime.mjs";
 
 const escape = (value: string) => value.replace(/[&<>"']/g, (character) => ({
@@ -21,8 +22,11 @@ export default function Reader({ corpus, initialPageId }: { corpus: Corpus; init
     const home = corpus.pages.find((candidate) => candidate.id === corpus.homeId);
     if (!page || !home) return "<main><p>This page is unavailable.</p></main>";
     const source = corpus.source;
-    const more = source?.hasMore && (source.pagesLoaded ?? 1) < (source.pageLimit ?? 10)
-      ? ` <a data-reader-reload href="/s/${escape(corpus.siteSlug)}?pages=${(source.pagesLoaded ?? 1) + 1}">Load more</a>` : "";
+    const pagination = paginationAction(corpus, source?.requestedPages ?? source?.pagesLoaded ?? 1);
+    const continuation = new URL(page.href, "https://barthes.invalid");
+    if (pagination.kind === "load-more" || pagination.kind === "retry") continuation.searchParams.set("pages", String(pagination.pages));
+    const more = pagination.kind === "load-more" || pagination.kind === "retry"
+      ? ` <a data-reader-reload href="${escape(continuation.pathname + continuation.search)}">${pagination.kind === "retry" ? "Retry load" : "Load more"}</a>` : "";
     const fullSource = sourceURL(source?.url);
     const capped = source?.hasMore && !more;
     const action = more || (capped && fullSource ? ` <a href="${escape(fullSource)}">Open the full channel on Are.na</a>` : "");

@@ -1,12 +1,15 @@
 // hx generated 261101 — deterministic API/pagination, authored-edge and hostile-Markdown tests.
 import assert from "node:assert/strict";
 import test from "node:test";
-import { ARENA_CACHE_SECONDS, ARENA_MAX_PAGES, corpusFromArenaEntries, getArenaCorpus, normalizePageLimit, renderArenaMarkdown, type ArenaEntry } from "../../src/lib/content/arena";
+import { ARENA_CACHE_SECONDS, ARENA_MAX_PAGES, corpusFromArenaEntries, getArenaCorpus as readArenaCorpus, normalizePageLimit, renderArenaMarkdown, type ArenaEntry } from "../../src/lib/content/arena";
 
 const a: ArenaEntry = {id:52203993, type:"Text", state:"available", visibility:"public", title:null, created_at:"2026-10-31T22:56:08Z", content:{markdown:"Test block A\n\n[Link to B](https://www.are.na/block/52203995)\n\n"}};
 const b: ArenaEntry = {id:52203995, type:"Text", state:"available", visibility:"public", title:null, created_at:"2026-10-31T22:56:13Z", content:{markdown:"Test block B"}};
 const body = (data: ArenaEntry[], currentPage = 1, totalPages = 1, totalCount = data.length) => ({data, meta:{current_page:currentPage, next_page:currentPage < totalPages ? currentPage + 1 : null, total_pages:totalPages, total_count:totalCount, has_more_pages:currentPage < totalPages}});
 const json = (value: unknown) => new Response(JSON.stringify(value), {headers:{"content-type":"application/json"}});
+const channel = {id:5946473, type:"Channel", slug:"barthes-test", title:"Barthes test", state:"available", visibility:"closed", owner:{slug:"desmond-wong"}};
+// Existing content fixtures share a separately validated public channel response.
+const getArenaCorpus: typeof readArenaCorpus = (options = {}) => readArenaCorpus({...options, fetcher:async (url, init) => new URL(url).pathname.endsWith('/contents') ? options.fetcher!(url, init) : json(channel)});
 
 test("real-channel fixture has two actual nodes and exactly one authored edge", () => {
   const corpus = corpusFromArenaEntries([a, b]);
