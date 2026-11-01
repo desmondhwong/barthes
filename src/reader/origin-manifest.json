@@ -1,0 +1,50 @@
+{
+  "source": "Sitemap 0.8",
+  "files": [
+    {
+      "source": "work/sitemap/src/public/graph.js",
+      "sha256": "c8bdef8d36ed3b63ef8f655bd2e41dce268bcdb981f3a372af8012ff39c76237",
+      "destination": "work/barthes/src/reader/graph.mjs"
+    },
+    {
+      "source": "work/sitemap/src/public/path.js",
+      "sha256": "8998f83f612bced2aa07a53380603d44836f6621500a4ed92315d14f04dcbddd",
+      "destination": "work/barthes/src/reader/path.mjs"
+    },
+    {
+      "source": "work/sitemap/src/public/zoom.js",
+      "sha256": "1f8641354a5fc958a328a030c0e05e92629ce32b5d16aa94dbb2d904fcb5fc5b",
+      "destination": "work/barthes/src/reader/zoom.mjs"
+    },
+    {
+      "source": "work/sitemap/src/public/catalog.js",
+      "sha256": "3ffedd4dd3c5b36e98e36a86182feeeea231654a341b89b62f3622bdc6a601be",
+      "destination": "work/barthes/src/reader/catalog.mjs"
+    },
+    {
+      "source": "work/sitemap/src/public/connections.js",
+      "sha256": "6e3a679c39daf77f9caeed2488c28853a75ac33bc3cc7c4a2ef4bf032cf9417f",
+      "destination": "work/barthes/src/reader/connections.mjs"
+    },
+    {
+      "source": "work/sitemap/src/public/workspace.js",
+      "sha256": "31f7910ea883c70fe680f3b85e52768706fbccf2fc59ad8fab54ea1be73df64f",
+      "destination": "work/barthes/src/reader/workspace.mjs"
+    },
+    {
+      "source": "work/sitemap/src/public/navigation.js",
+      "sha256": "ffb67d20ab18dc8a44be5a1b4e31e6576ca9578308b6769198622398a50f6b9c",
+      "destination": "work/barthes/src/reader/navigation.mjs"
+    },
+    {
+      "source": "work/sitemap/src/public/app.js",
+      "sha256": "903b14c403a9c7cc0d63f9ea2a8682c9053d6ad3a72f882f887761d0024d7c84",
+      "destination": "work/barthes/src/reader/runtime.mjs"
+    },
+    {
+      "source": "work/sitemap/src/public/styles.css",
+      "sha256": "bdd1819ecededc03085e61801ec1f59fcd58d95261c511a005fda7d8dfa16ce5",
+      "destination": "work/barthes/public/reader.css"
+    }
+  ]
+}
